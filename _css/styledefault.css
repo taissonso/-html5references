@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 1.2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+}
+.container {
+    display: flex;
+    margin: auto;
+    width: 70%;
+}
+
+.search {
+    background-image: url('../_img/search.png');
+    background-repeat: no-repeat;
+    background-position: right 2% bottom 50%;
+    width: 70%;
+    margin: 20px 0 0 0;
+    margin-left: 15%;
+    padding: 10px 0px 10px 25px;
+    border-radius: 8px;
+    border: 1px solid #727171;
+}
+
+.search::placeholder{
+    color: #000000;
+}
+
+.tabela {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+
+.tabela thead {
+    background-color: #000000;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.logoHTML { 
+    max-width: 100%;
+    height: auto;
+    margin: 1% 0 0 0;
+}
+
+.titulo {
+    font-size: 5rem;
+    font-family: sans-serif;
+    color: #E34F26;
+    text-shadow: 4px 4px 4px #000000;
+    opacity: 0.8;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #000000;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+}
+
+ /*Configuração do ul e li do Rodape*/
+ul, li{
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 7px;
+    padding: 0 15px 0 15px;
+}

@@ -1,13 +1,11 @@
 * {
     box-sizing: border-box;
-    margin: 0;
 }
 
 header{
     display: flex;
     justify-content: center;
     padding: 20px 0 10px 0;
-    border-bottom: 1px solid #dfdfdf;
 }
 
 .titulo {
@@ -19,10 +17,47 @@ header{
     padding: 10px 0px 10px 15px;
 }
 
-@media (max-width:200px){
-    .search {
-        background-image: none;
-        width: 95%;
-        margin: 5px;
-    }
+/*Ocula o cabeçalho da tabela*/
+.tabela thead, .tabela-atributos thead {
+    display: none;
+}
+
+/*Usa wrap para ter a quebra do contéudo*/
+.tabela tr, .tabela-atributos tr {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.tabela td , .tabela-atributos td{
+    width: 50%;
+    position: relative;
+    padding-top: 25px;
+    font-size: 16px;
+}
+
+/*Para limpar a expessura das linhas internas da tabela*/
+.tabela td:nth-child(2n), .tabela-atributos td:nth-child(2n){
+    border-left: none;
+}
+
+.tabela td:nth-child(-n+2){
+    border-bottom: none;
+}
+
+.tabela-atributos td:last-child {
+    border-top: none;
+}
+
+/*Fazendo os spans internos aparecer para ficar mais fácil a leitura dos campos da tabela em celulares*/
+.tabela td span, .tabela-atributos td span {
+    display: block;
+    font-size: 70%;
+    background: #c0bfbf;
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 2px;
+    width: 100%;
+    border-bottom: 1px solid;
 }

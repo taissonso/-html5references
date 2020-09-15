@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>HTML5 References</title>
 
     <link rel="stylesheet" href="_css/styledefault.css">
@@ -16,36 +17,127 @@
         <h1 class="titulo">&lt;HTML5&gt;</h1>
     </header>
     <main class="main">
-        <input type="text" class="search" placeholder="Buscar por TAG">
+        <input type="text" class="search" placeholder="Buscar">
 
-        <div class="container">
-            <table class="tabela">
-                <thead>
-                    <tr>
-                        <th>TAG</th>
-                        <th>Descrição</th>
-                        <th>Atributos</th>
-                        <th>Exemplo</th>
-                    </tr>
-                </thead>
+        <nav class="nav-abas">
+            <input type="radio" name="aba" id="tags" checked>
+            <label for="tags">Tags</label>
+            <input type="radio" name="aba" id="atributos">
+            <label for="atributos">Atributos</label>
+        </nav>
 
-                <tbody>
-                    <tr>
-                        <td>Campo 1</td>
-                        <td>Campo 2</td>
-                        <td>Campo 3</td>
-                        <td>Campo 4</td>
-                    </tr>
+        <div class="container-conteudo">
+            <div class="conteudo" id="conteudo-tags">
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>TAG</th>
+                            <th>Descrição</th>
+                            <th>Atributos</th>
+                            <th>Exemplo</th>
+                        </tr>
+                    </thead>
 
-                    <tr>
-                        <td>Campo 1</td>
-                        <td>Campo 2</td>
-                        <td>Campo 3</td>
-                        <td>Campo 4</td>
-                    </tr>
-                </tbody>
-            </table>
-         </div>  
+                    <tbody>
+                        <tr>
+                            <td><span>TAG</span><code>&lt;!-- -></code></td>
+                            <td><span>Descrição</span>Usado para colocar um comentário dentro do codígo HTML
+                            </td>
+                            <td><span>Atributos</span>-</td>
+                            <td><span>Exemplo</span>&lt;!-- Isso é um comentário-></td>
+                        </tr>
+                        <tr>
+                            <td><span>TAG</span><code>&lt;!DOCTYPE></code></td>
+                            <td><span>Descrição</span><code>É uma "informação" para o navegador sobre que tipo de documento esperar.
+                            </code></td>
+                            <td><span>Atributos</span><code>-</code></td>
+                            <td><span>Exemplo</span><code>&lt;!DOCTYPE html></code></td>
+                        </tr>
+                        <tr>
+                            <td><span>TAG</span><code>&lt;a>&lt;/a></code></td>
+                            <td><span>Descrição</span><code>Define um hiperlink.</code></td>
+                            <td><span>Atributos</span><code>Atributos</code></td>
+                            <td><span>Exemplo</span><code>Exemplo</code></td>
+                        </tr>
+                        <tr>
+                            <td><span>TAG</span><code>TAG</code></td>
+                            <td><span>Descrição</span><code>Descrição</code></td>
+                            <td><span>Atributos</span><code>Atributos</code></td>
+                            <td><span>Exemplo</span><code>Exemplo</code></td>
+                        </tr>
+                        <tr>
+                            <td><span>TAG</span><code>TAG</code></td>
+                            <td><span>Descrição</span><code>Descrição</code></td>
+                            <td><span>Atributos</span><code>Atributos</code></td>
+                            <td><span>Exemplo</span><code>Exemplo</code></td>
+                        </tr>
+                        <tr>
+                            <td><span>TAG</span><code>TAG</code></td>
+                            <td><span>Descrição</span><code>Descrição</code></td>
+                            <td><span>Atributos</span><code>Atributos</code></td>
+                            <td><span>Exemplo</span><code>Exemplo</code></td>
+                        </tr>
+                        <tr>
+                            <td><span>TAG</span><code>TAG</code></td>
+                            <td><span>Descrição</span><code>Descrição</code></td>
+                            <td><span>Atributos</span><code>Atributos</code></td>
+                            <td><span>Exemplo</span><code>Exemplo</code></td>
+                        </tr>
+                        <tr>
+                            <td><span>TAG</span><code>TAG</code></td>
+                            <td><span>Descrição</span><code>Descrição</code></td>
+                            <td><span>Atributos</span><code>Atributos</code></td>
+                            <td><span>Exemplo</span><code>Exemplo</code></td>
+                        </tr>
+                        <tr>
+                            <td><span>TAG</span><code>TAG</code></td>
+                            <td><span>Descrição</span><code>Descrição</code></td>
+                            <td><span>Atributos</span><code>Atributos</code></td>
+                            <td><span>Exemplo</span><code>Exemplo</code></td>
+                        </tr>
+                        <tr>
+                            <td><span>TAG</span><code>TAG</code></td>
+                            <td><span>Descrição</span><code>Descrição</code></td>
+                            <td><span>Atributos</span><code>Atributos</code></td>
+                            <td><span>Exemplo</span><code>Exemplo</code></td>
+                        </tr>
+                        <tr>
+                            <td><span>TAG</span><code>TAG</code></td>
+                            <td><span>Descrição</span><code>Descrição</code></td>
+                            <td><span>Atributos</span><code>Atributos</code></td>
+                            <td><span>Exemplo</span><code>Exemplo</code></td>
+                        </tr>
+                        <tr>
+                            <td><span>TAG</span><code>TAG</code></td>
+                            <td><span>Descrição</span><code>Descrição</code></td>
+                            <td><span>Atributos</span><code>Atributos</code></td>
+                            <td><span>Exemplo</span><code>Exemplo</code></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="conteudo" id="conteudo-atributos">
+                <table class="tabela-atributos">
+                    <thead>
+                        <tr>
+                            <th>Atributo</th>
+                            <th>Pertence a Tag</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><span>Atributo</span><code>&lt;!-- -></code></td>
+                            <td><span>Pertence a Tag</span>Usado para colocar um comentário dentro do codígo HTML</td>
+                            <td><span>Descrição</span>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </main>
     <footer>
         <ul>
@@ -61,6 +153,7 @@
                     <img src="_img/twitter-grey-3-25.png" alt="Twitter"></a></li>
         </ul>
     </footer>
+    <script src="_js/scripts.js"></script>
 </body>
 
 </html>

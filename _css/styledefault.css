@@ -1,10 +1,10 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
-    font-size: 1.2rem;
     margin: 0px;
     padding: 0px;
 }
@@ -13,21 +13,70 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #c7c7c7;
 }
-.container {
+
+.main {
     display: flex;
-    margin: auto;
-    width: 70%;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* --- MENU COM ABAS --- */
+.nav-abas { 
+    display: flex;
+    text-align: center;
+    border: 1px solid black;
+    padding: 0;
+    margin: 25px 0 0 0;
+    width: 80%;
+    background-color: #f8cc06;
+}
+
+.nav-abas input[type=radio]{
+    display: none;
+}
+
+.nav-abas input[type=radio] + label {
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid red;
+    display: inline-block;
+}
+
+.nav-abas input[type=radio]:checked + label {
+    background-color: green;
+}
+
+/** --- CONTEÚDO --- **/
+.container-conteudo {
+    display: block;
+    width: 80%;
+}
+
+.conteudo {
+    display: none;
+    width: 100%;
+}
+
+.container-conteudo .conteudo.classe-conteudo {
+    display: block;
+}
+
+
+/*TABELA*/
+.container {
+    width: 80%;
 }
 
 .search {
     background-image: url('../_img/search.png');
     background-repeat: no-repeat;
     background-position: right 2% bottom 50%;
-    width: 70%;
+    width: 80%;
     margin: 20px 0 0 0;
-    margin-left: 15%;
     padding: 10px 0px 10px 25px;
     border-radius: 8px;
     border: 1px solid #727171;
@@ -37,16 +86,36 @@ body {
     color: #000000;
 }
 
-.tabela {
+.tabela, .tabela-atributos {
     width: 100%;
     text-align: center;
     margin: 25px 0 0 0;
+    border-collapse: collapse;
 }
 
 .tabela thead {
     background-color: #000000;
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff;
+}
+
+.tabela td, .tabela th, .tabela-atributos td, .tabela-atributos th {
+    padding: 10px;
+    border: 1px solid #000000;
+    font-size: 14px;
+}
+
+.tabela tbody tr:hover {
+    background-color: #ff5b29;
+    color: #ffffff;
+}
+
+.tabela tbody tr:hover span{
+    color: #000000;
+}
+
+.tabela td span {
+    display: none;
 }
 
 .logoHTML { 
@@ -69,12 +138,13 @@ footer {
     height: 50px;
     width: 100%;
     bottom: 0;
+    margin-top: 20px;
     position: fixed;
     text-align: center;
 }
 
  /*Configuração do ul e li do Rodape*/
-ul, li{
+footer ul, li{
     box-sizing: border-box;
     display: inline-block;
     margin-top: 7px;

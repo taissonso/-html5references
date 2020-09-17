@@ -41,16 +41,13 @@ header{
     border-left: none;
 }
 
-.tabela td:nth-child(-n+2){
-    border-bottom: none;
-}
 
-.tabela-atributos td:last-child {
+.tabela td:last-child , .tabela-atributos td:last-child {
     border-top: none;
 }
 
 /*Fazendo os spans internos aparecer para ficar mais fácil a leitura dos campos da tabela em celulares*/
-.tabela td span, .tabela-atributos td span {
+.tabela td span , .tabela-atributos td span {
     display: block;
     font-size: 70%;
     background: #c0bfbf;

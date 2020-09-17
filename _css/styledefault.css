@@ -86,7 +86,7 @@ body {
     color: #000000;
 }
 
-.tabela, .tabela-atributos {
+#tabela-tags, .tabela-atributos {
     width: 100%;
     text-align: center;
     margin: 25px 0 0 0;
@@ -96,27 +96,24 @@ body {
 .tabela thead {
     background-color: #000000;
     font-size: 16px;
-    color: #ffffff;
+    color:green;
 }
 
 .tabela td, .tabela th, .tabela-atributos td, .tabela-atributos th {
     padding: 10px;
     border: 1px solid #000000;
-    font-size: 14px;
+    font-size: 14px;  
 }
 
 .tabela tbody tr:hover {
     background-color: #ff5b29;
-    color: #ffffff;
 }
 
 .tabela tbody tr:hover span{
     color: #000000;
 }
 
-.tabela td span {
-    display: none;
-}
+
 
 .logoHTML { 
     max-width: 100%;

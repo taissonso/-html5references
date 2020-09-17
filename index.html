@@ -17,7 +17,7 @@
         <h1 class="titulo">&lt;HTML5&gt;</h1>
     </header>
     <main class="main">
-        <input type="text" class="search" placeholder="Buscar">
+        <input type="text" class="search" id="busca" placeholder="Buscar por Tag">
 
         <nav class="nav-abas">
             <input type="radio" name="aba" id="tags" checked>
@@ -27,96 +27,7 @@
         </nav>
 
         <div class="container-conteudo">
-            <div class="conteudo" id="conteudo-tags">
-                <table class="tabela">
-                    <thead>
-                        <tr>
-                            <th>TAG</th>
-                            <th>Descrição</th>
-                            <th>Atributos</th>
-                            <th>Exemplo</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td><span>TAG</span><code>&lt;!-- -></code></td>
-                            <td><span>Descrição</span>Usado para colocar um comentário dentro do codígo HTML
-                            </td>
-                            <td><span>Atributos</span>-</td>
-                            <td><span>Exemplo</span>&lt;!-- Isso é um comentário-></td>
-                        </tr>
-                        <tr>
-                            <td><span>TAG</span><code>&lt;!DOCTYPE></code></td>
-                            <td><span>Descrição</span><code>É uma "informação" para o navegador sobre que tipo de documento esperar.
-                            </code></td>
-                            <td><span>Atributos</span><code>-</code></td>
-                            <td><span>Exemplo</span><code>&lt;!DOCTYPE html></code></td>
-                        </tr>
-                        <tr>
-                            <td><span>TAG</span><code>&lt;a>&lt;/a></code></td>
-                            <td><span>Descrição</span><code>Define um hiperlink.</code></td>
-                            <td><span>Atributos</span><code>Atributos</code></td>
-                            <td><span>Exemplo</span><code>Exemplo</code></td>
-                        </tr>
-                        <tr>
-                            <td><span>TAG</span><code>TAG</code></td>
-                            <td><span>Descrição</span><code>Descrição</code></td>
-                            <td><span>Atributos</span><code>Atributos</code></td>
-                            <td><span>Exemplo</span><code>Exemplo</code></td>
-                        </tr>
-                        <tr>
-                            <td><span>TAG</span><code>TAG</code></td>
-                            <td><span>Descrição</span><code>Descrição</code></td>
-                            <td><span>Atributos</span><code>Atributos</code></td>
-                            <td><span>Exemplo</span><code>Exemplo</code></td>
-                        </tr>
-                        <tr>
-                            <td><span>TAG</span><code>TAG</code></td>
-                            <td><span>Descrição</span><code>Descrição</code></td>
-                            <td><span>Atributos</span><code>Atributos</code></td>
-                            <td><span>Exemplo</span><code>Exemplo</code></td>
-                        </tr>
-                        <tr>
-                            <td><span>TAG</span><code>TAG</code></td>
-                            <td><span>Descrição</span><code>Descrição</code></td>
-                            <td><span>Atributos</span><code>Atributos</code></td>
-                            <td><span>Exemplo</span><code>Exemplo</code></td>
-                        </tr>
-                        <tr>
-                            <td><span>TAG</span><code>TAG</code></td>
-                            <td><span>Descrição</span><code>Descrição</code></td>
-                            <td><span>Atributos</span><code>Atributos</code></td>
-                            <td><span>Exemplo</span><code>Exemplo</code></td>
-                        </tr>
-                        <tr>
-                            <td><span>TAG</span><code>TAG</code></td>
-                            <td><span>Descrição</span><code>Descrição</code></td>
-                            <td><span>Atributos</span><code>Atributos</code></td>
-                            <td><span>Exemplo</span><code>Exemplo</code></td>
-                        </tr>
-                        <tr>
-                            <td><span>TAG</span><code>TAG</code></td>
-                            <td><span>Descrição</span><code>Descrição</code></td>
-                            <td><span>Atributos</span><code>Atributos</code></td>
-                            <td><span>Exemplo</span><code>Exemplo</code></td>
-                        </tr>
-                        <tr>
-                            <td><span>TAG</span><code>TAG</code></td>
-                            <td><span>Descrição</span><code>Descrição</code></td>
-                            <td><span>Atributos</span><code>Atributos</code></td>
-                            <td><span>Exemplo</span><code>Exemplo</code></td>
-                        </tr>
-                        <tr>
-                            <td><span>TAG</span><code>TAG</code></td>
-                            <td><span>Descrição</span><code>Descrição</code></td>
-                            <td><span>Atributos</span><code>Atributos</code></td>
-                            <td><span>Exemplo</span><code>Exemplo</code></td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
+            <div class="conteudo" id="conteudo-tags"></div>
 
             <div class="conteudo" id="conteudo-atributos">
                 <table class="tabela-atributos">
@@ -130,9 +41,27 @@
 
                     <tbody>
                         <tr>
-                            <td><span>Atributo</span><code>&lt;!-- -></code></td>
-                            <td><span>Pertence a Tag</span>Usado para colocar um comentário dentro do codígo HTML</td>
-                            <td><span>Descrição</span>-</td>
+                            <td><span>Atributo</span>accept</td>
+                            <td><span>Pertence a Tag</span>&lt;input&gt;</td>
+                            <td><span>Descrição</span>Especifica os tipos de arquivos que o servidor aceita
+                                (que podem ser enviados por meio de um upload de arquivo).</td>
+                        </tr>
+                        <tr>
+                            <td><span>Atributo</span>accept-charset</td>
+                            <td><span>Pertence a Tag</span>&lt;form&gt;</td>
+                            <td><span>Descrição</span>Especifica as codificações de caracteres que devem 
+                                ser usadas para o envio do formulário</td>
+                        </tr>
+                        <tr>
+                            <td><span>Atributo</span>accesskey</td>
+                            <td><span>Pertence a Tag</span>Atributo Global<sup>1</sup></td>
+                            <td><span>Descrição</span>Especifica uma tecla de atalho para ativar / focar
+                                 um elemento.</td>
+                        </tr>
+                        <tr>
+                            <td><span>Atributo</span></td>
+                            <td><span>Pertence a Tag</span>&lt;&gt;</td>
+                            <td><span>Descrição</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -153,6 +82,8 @@
                     <img src="_img/twitter-grey-3-25.png" alt="Twitter"></a></li>
         </ul>
     </footer>
+    <script src="_js/tabelatags.js"></script>
+    <script src="_js/tabelas.js"></script>
     <script src="_js/scripts.js"></script>
 </body>
 

@@ -116,6 +116,11 @@ body {
 .tabela span {
     display: none;
 }
+.tabela tbody tr:last-child {
+    background: red;
+    margin-bottom: 200px;
+}
+
 
 .logoHTML { 
     max-width: 100%;
@@ -137,8 +142,8 @@ footer {
     height: 50px;
     width: 100%;
     bottom: 0;
-    margin-top: 20px;
-    position: fixed;
+    margin-top: 100px;
+    position: sticky;
     text-align: center;
 }
 

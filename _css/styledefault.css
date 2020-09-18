@@ -113,7 +113,9 @@ body {
     color: #000000;
 }
 
-
+.tabela span {
+    display: none;
+}
 
 .logoHTML { 
     max-width: 100%;

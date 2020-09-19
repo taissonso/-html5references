@@ -27,11 +27,11 @@ body {
 .nav-abas { 
     display: flex;
     text-align: center;
-    border: 1px solid black;
     padding: 0;
     margin: 25px 0 0 0;
     width: 80%;
-    background-color: #f8cc06;
+    background-color: #ffffff;
+    
 }
 
 .nav-abas input[type=radio]{
@@ -42,12 +42,13 @@ body {
     width: 50%;
     height: 50px;
     line-height: 50px;
-    border: 1px solid red;
+    border: 1px solid #000000;
     display: inline-block;
+    border-radius: 25px;
 }
 
 .nav-abas input[type=radio]:checked + label {
-    background-color: green;
+    background-color: #f303b7;
 }
 
 /** --- CONTEÚDO --- **/
@@ -93,6 +94,33 @@ body {
     border-collapse: collapse;
 }
 
+/*Elementos dentro das tabelas que receberam alguma classe para fins de demonstração*/
+
+.exemplo-body {
+    border: 1px solid #000000;
+    height: 75px;
+}
+
+.exemplo-footer {
+    border: 1px solid #000000;
+}
+
+.div{
+    border: 4px solid #3cff00;
+    background-color: #1100ff;
+    color: #ffffff;
+}
+
+.obsoleto {
+    color:#ff0000;
+}
+
+.audio {
+    width: 150px;
+    text-align: center;
+}
+
+/* Tabelas*/
 .tabela thead {
     background-color: #000000;
     font-size: 16px;

@@ -288,11 +288,11 @@ var vetorTags = [
         "&lt;fieldset&gt;&lt;/fieldset&gt;",
         "É usada para agrupar elementos relacionados em um formulário."
         + "Desenha uma caixa ao redor dos elementos relacionados.",
-        "&lt;fieldset&gt;&lt;legend&gt;Pessoa:&lt;/legend&gt;&lt;label for=\&quot;fname\&quot;&gt;"
+        "&lt;label for=\&quot;fname\&quot;&gt;"
         + "Nome:&lt;/label&gt;&lt;input type=\&quot;text\&quot; name=\&quot;fname\&quot;&gt;&lt;"
         + "br&gt;&lt;br&gt;&lt;label for=\&quot;lname\&quot;&gt;Sobrenome:&lt;/label&gt;&lt;"
         + "input type=\&quot;text\&quot; name=\&quot;lname\&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/fieldset&gt;",
-        "<fieldset><legend>Pessoa:</legend><label for=\"fname\">Nome:</label>"
+        "<fieldset><label for=\"fname\">Nome:</label>"
         + "<input type=\"text\" name=\"fname\"><br><br><label for=\"lname\">Sobrenome:</label>"
         + "<input type=\"text\" name=\"lname\"><br><br></fieldset>"
     ],
@@ -322,19 +322,557 @@ var vetorTags = [
         "&lt;div class=\&quot;exemplo-footer\&quot;&lt;body&gt;Eu sou o corpo ou a "
         + "se&ccedil;&atilde;o&lt;/body&gt;&lt;footer&gt;&lt;p&gt;Eu sou o rodap&eacute;"
         + "&lt;br&gt;&lt;/footer&gt;&lt;/div&gt;",
-        "<div class=\"exemplo-footer\"<body>Eu sou o corpo ou a seção</body><footer><p>Eu sou o rodapé<br>"
-        +"</footer></div>"
+        "<div class=\"exemplo-footer\"<body>Eu sou o corpo ou a seção<footer><p>Eu sou o rodapé<br>"
+        +"</footer></body></div>"
     ],
     [
-        "",
-        "",
-        "",
+        "&lt;form&gt;&lt;/form&gt;",
+        "Define um formulário HTML para entrada do usuário",
+        "&lt;form&gt;&lt;label for=&quot;fname&quot;&gt;Nome:&lt;/label&gt;&lt;"
+        + "input type=&quot;text&quot; &gt;&lt;br&gt;&lt;br&gt;&lt;/form&gt;",
+        "<form><label for=\"fname\">Nome:</label><input type=\"text\"><br><br></form>"
+    ],
+    [
+        "<p class=\"obsoleto\">&lt;frame&gt;</p>",
+        "<p class=\"obsoleto\">Obsoleto, não compatível com HTML5.</p>",
+        "<p class=\"obsoleto\">Sem exemplo.</p>",
         ""
     ],
     [
-        "",
-        "",
-        "",
+        "<p class=\"obsoleto\">&lt;frameset&gt;&lt;/frameset&gt</p>",
+        "<p class=\"obsoleto\">Obsoleto, não compatível com HTML5.</p>",
+        "<p class=\"obsoleto\">Sem exemplo.</p>",
         ""
+    ],
+    [
+        "&lt;h1&gt; a &lt;h6&gt;",
+        "Define o título de cabeçalho ou título da página. &lt;h1&gt mais importante até o"
+        + "&lt;h6&gt; de menos importancia.",
+        "&lt;h1&gt;Sou um t&iacute;tulo &amp;lt;h1&amp;gt;&lt;/h1&gt;"
+        + "&lt;h2&gt;Sou um t&iacute;tulo &amp;lt;h2&amp;gt;&lt;/h2&gt;"
+        + "&lt;h3&gt;Sou um t&iacute;tulo &amp;lt;h3&amp;gt;&lt;/h3&gt;"
+        + "&lt;h4&gt;Sou um t&iacute;tulo &amp;lt;h4&amp;gt;&lt;/h4&gt;"
+        + "&lt;h5&gt;Sou um t&iacute;tulo &amp;lt;h5&amp;gt;&lt;/h5&gt;"
+        + "&lt;h6&gt;Sou um t&iacute;tulo &amp;lt;h6&amp;gt;&lt;/h6&gt;",
+        "<h1>Sou um título &lt;h1&gt;</h1><h2>Sou um título &lt;h2&gt;</h2>"
+        + "<h3>Sou um título &lt;h3&gt;</h3><h4>Sou um título &lt;h4&gt;</h4>"
+        + "<h5>Sou um título &lt;h5&gt;</h5><h6>Sou um título &lt;h6&gt;</h6>"
+    ],
+    [
+        "&lt;head&gt;&lt;/head&gt;",
+        "Contém metadados/informações para o documento. Não produz saída visual no navegador.",
+        "&lt;head&gt;&lt;title&gt;Title of the document&lt;/title&gt;&lt;/head&gt;",
+        ""
+    ],
+    [
+        "&lt;header&gt;&lt;/header&gt;",
+        "Define um cabeçalho para um documento ou seção",
+        "&lt;div class=\&quot;exemplo-body\&quot;&lt;body&gt;&lt;header class=\&quot;exemplo-header"
+        +" \&quot;&gt;&lt;p&gt;Eu sou o cabe&ccedil;alho&lt;/p&gt;&lt;/header&gt;&lt;p&gt;"
+        + "Sou o corpo ou se&ccedil;&atilde;o&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;",
+        "<div class=\"exemplo-body\"<body><header class=\"exemplo-header\"><p>Eu sou o cabeçalho</p>"
+        +"</header><p>Sou o corpo ou seção</p></body></div>"
+    ],
+    [
+        "&lt;hr&gt;",
+        "Traça uma linha horizontal na tela, muito usada para mudança de assunto ou tópico.",
+        "&lt;hr&gt;",
+        "<hr>"
+    ],
+    [
+        "&lt;html&gt;&lt;/html&gt;",
+        "Define a raiz de um documento HTML",
+        "&lt;html&gt;&lt;/html&gt;",
+        ""
+    ],
+    [
+        "&lt;i&gt;&lt;/i&gt;",
+        "Define uma parte do texto em uma voz ou humor alternativo."
+        + "O conteúdo interno é normalmente exibido em itálico .",
+        "&lt;p&gt;&lt;i&gt;Mudan&ccedil;a no texto&lt;/i&gt;, sem mudan&ccedil;a no texto.&lt;/p&gt;",
+        "<p><i>Mudança no texto</i>, sem mudança no texto.</p>"
+    ],
+    [
+        "&lt;iframe&gt;&lt;/iframe&gt;",
+        "Especifica um quadro embutido, é usado para incorporar outro documento ao documento HTML atual. ",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_iframe\"" 
+        +"target=\"_blank\">Exemplo &lt;iframe&gt;<a>"
+    ],
+    [
+        "&lt;img&gt;",
+        "Define uma imagem.",
+        "&lt;img src=\&quot;./_img/twitter-grey-3-25.png\&quot;&gt;",
+        "<img src=\"./_img/twitter-grey-3-25.png\">"
+    ],
+    [
+        "&lt;input&gt;",
+        "Define um campo de entrada.",
+        "&lt;input type=\&quot;text\&quot;&gt;",
+        "<input type=\"text\">"
+    ],
+    [
+        "&lt;ins&gt;&lt;/ins&gt;",
+        "Define um texto que foi inserido no documento, da o efeito de sublinhado.",
+        "&lt;p&gt;A cor favorita &eacute; &lt;del&gt;verde&lt;/del&gt; &lt;ins&gt;azul&lt;/ins&gt;!&lt;/p&gt;",
+        "<p>A cor favorita é <del>verde</del> <ins>azul</ins>!</p>"
+    ],
+    [
+        "&lt;kbd&gt;&lt;/kbd&gt;",
+        " é usada para definir a entrada do teclado."
+        + "O conteúdo interno é exibido na fonte monoespaçada padrão do navegador.",
+        "&lt;p&gt;Pressione &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;" 
+        + "para copiar texto (Windows).&lt;/p&gt;",
+        "<p>Pressione <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar texto (Windows).</p>"
+    ],
+    [
+        "&lt;label&gt;",
+        "Define um rótulo para um elemento &lt;input&gt;",
+        "&lt;label for=\&quot;sim\&quot;&gt;Nome: &lt;/label&gt;&lt;input type=\&quot;text\&quot;&gt;",
+        "<label for=\"sim\">Nome: </label><input type=\"text\">"
+    ],
+    [
+        "&lt;legend&gt;&lt;/legend&gt;",
+        "Define uma legenda para o elemento &lt;fieldset&gt;",
+        "&lt;fieldset&gt;&lt;legend&gt;Pessoa:&lt;/legend&gt;&lt;label for=\&quot;fname\&quot;"
+        + "&gt;Nome:&lt;/label&gt;&lt;input type=\&quot;text\&quot; name=\&quot;"
+        + "fname\&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;label for=\&quot;lname\&quot;&gt;"
+        + "Sobrenome:&lt;/label&gt;&lt;input type=\&quot;text\&quot; name=\&quot;lname\&quot;"
+        + "&gt;&lt;br&gt;&lt;br&gt;&lt;/fieldset&gt;",
+        "<fieldset><legend>Pessoa:</legend><label for=\"fname\">Nome:</label><input type=\"text\" "
+        + "name=\"fname\"><br><br><label for=\"lname\">Sobrenome:</label><input type=\"text\" "
+        + "name=\"lname\"><br><br></fieldset>"
+    ],
+    [
+        "&lt;li&gt;&lt;/li&gt;",
+        "Define um item de uma lista.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_list_test\"" 
+        +"target=\"_blank\">Exemplo &lt;li&gt;<a>"
+    ],
+    [
+        "&lt;link&gt;",
+        "Define a relação entre o documento atual e um recurso externo.",
+        "Exemplo: a relação entre o documento HTML e um arquivo CSS externo.",
+        ""
+    ],
+    [
+        "&lt;main&gt;&lt;/main&gt;",
+        " especifica o conteúdo principal de um documento.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_main\"" 
+        +"target=\"_blank\">Exemplo &lt;main&gt;<a>"
+    ],
+    [
+        "&lt;map&gt;&lt;/map&gt;",
+        "Usada para definir um mapa de imagem. Um mapa de imagem é uma imagem com áreas clicáveis.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_areamap\"" 
+        +"target=\"_blank\">Exemplo &lt;map&gt;<a>"
+    ],
+    [
+        "&lt;mark&gt;&lt;/mark&gt;",
+        "Define um texto grifado/destacado.",
+        "&lt;p&gt;Assim fica o texto &lt;mark&gt;grifado/destacado&lt;/mark&gt;.&lt;/p&gt;",
+        "<p>Assim fica o texto <mark>grifado/destacado</mark>.</p>"
+    ],
+    [
+        "&lt;meta&gt;",
+        "Define metadados sobre um documento HTML. Metadados são dados (informações) sobre dados."
+        + "sempre vão dentro do elemento <head> e são normalmente usadas para especificar conjunto de"
+        + "caracteres, descrição de página, palavras-chave, autor do documento e configurações de"
+        + "janela de visualização.",
+        "Não serão exibidos na página, mas podem ser analisados ​​pela máquina.",
+        ""
+    ],
+    [
+        "&lt;meter&gt;&lt;/meter&gt;",
+        "Define uma medição escalar dentro de uma faixa conhecida ou um valor fracionário.",
+        "&lt;label for=&quot;disk_c&quot;&gt;Espa&ccedil;o usado C:&lt;/label&gt;&lt;meter"
+        + "id=&quot;disk_c&quot; value=&quot;4&quot; min=&quot;0&quot; max=&quot;10&quot;"
+        + "&gt;&lt;/meter&gt;&lt;br&gt;",
+        "<label for=\"disk_c\">Espaço usado C:</label><meter id=\"disk_c\" value=\"4\" min=\"0\""
+        + "max=\"10\"></meter><br>"
+    ],
+    [
+        "&lt;nav&gt;&lt;/nav&gt;",
+        "Define um conjunto de links de navegação.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_nav\"" 
+        +"target=\"_blank\">Exemplo &lt;nav&gt;<a>"
+    ],
+    [
+        "<p class=\"obsoleto\">&lt;noframes&gt;&lt;/noframes&gt;</p>",
+        "<p class=\"obsoleto\">Obsoleto, não compatível com HTML5.</p>",
+        "<p class=\"obsoleto\">Sem exemplo.</p>",
+        ""
+    ],
+    [
+        "&lt;noscript&gt;&lt;/noscript&gt;",
+        "Define um conteúdo alternativo para usuários que não oferecem suporte a scripts do lado do cliente",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_noscript\"" 
+        +"target=\"_blank\">Exemplo &lt;noscript&gt;<a>"
+    ],
+    [
+        "&lt;object&gt;&lt;/object&gt;",
+        "Define um contêiner para um recurso externo.O recurso externo pode ser uma página da web,"
+        + "uma imagem, um reprodutor de mídia ou um aplicativo de plug-in.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_object_video\"" 
+        +"target=\"_blank\">Exemplo &lt;object&gt;<a>"
+    ],
+    [
+        "&lt;ol&gt;&lt;/ol&gt;",
+        "Define uma lista ordenada. Uma lista ordenada pode ser numérica ou alfabética.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_lists\"" 
+        +"target=\"_blank\">Exemplo &lt;ol&gt;<a>"
+    ],
+    [
+        "&lt;optgroup&gt;&lt;/optgroup&gt;",
+        "Usada para agrupar opções relacionadas em um elemento &lt;select&gt;.",
+        "&lt;label for=&quot;cars&quot;&gt;Escolha um carro:&lt;/label&gt;&lt;select"
+        + "name=&quot;cars&quot; id=&quot;cars&quot;&gt;&lt;optgroup label=&quot;Carros Suecos&quot;"
+        + "&gt;&lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;&lt;option value=&quot;"
+        + "saab&quot;&gt;Saab&lt;/option&gt;&lt;/optgroup&gt;&lt;optgroup label=&quot;"
+        + "Carros Alem&atilde;es&quot;&gt;&lt;option value=&quot;mercedes&quot;&gt;Mercedes&lt;/option&gt;"
+        + "&lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;&lt;/optgroup&gt;&lt;/select&gt;",
+        "<label for=\"cars\">Escolha um carro:</label><select name=\"cars\"><optgroup label=\"Carros Suecos\">"
+        + "<option value=\"volvo\">Volvo</option><option value=\"saab\">Saab</option></optgroup>"
+        +"<optgroup label=\"Carros Alemães\"><option value=\"mercedes\">Mercedes</option><option "
+        + "value=\"audi\">Audi</option></optgroup></select>"
+    ],
+    [
+        "&lt;option&gt;&lt;/option&gt;",
+        "Define uma opção em um &lt;select&gt;.",
+        "&lt;label for=&quot;bebida&quot;&gt;Escolha uma bebida:&lt;/label&gt;&lt;select id=&quot;"
+        + "bebida&quot;&gt;&lt;option&gt;Café&lt;/option&gt;&lt;option&gt;Cerveja&lt;/option&gt;&lt;"
+        + "option&gt;Água&lt;/option&gt;&lt;option&gt;Refrigerante&lt;/option&gt;&lt;/select&gt;",
+        "<label for=\"bebida\">Escolha uma bebida:</label><select id=\"bebida\"><option>Café</option>"
+        + "<option>Cerveja</option><option>Água</option><option>Refrigerante</option></select>"
+    ],
+    [
+        "&lt;output &gt;&lt;/output &gt;",
+        "Usada para representar o resultado de um cálculo (como um executado por um script).",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_output\"" 
+        +"target=\"_blank\">Exemplo &lt;output&gt;<a>"
+    ],
+    [
+        "&lt;p&gt;&lt;/p&gt;",
+        "Define um parágrafo.",
+        "&lt;p&gt;Eu sou um par&aacute;grafo!&lt;/p&gt;",
+        "<p>Eu sou um parágrafo!</p>"
+    ],
+    [
+        "&lt;param&gt;&lt;/param&gt;",
+        "Usada para definir parâmetros para um elemento &lt;object&gt;",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_param\"" 
+        +"target=\"_blank\">Exemplo &lt;param&gt;<a>"
+    ],
+    [
+        "&lt;picture&gt;&lt;/picture&gt;",
+        "Define um contêiner para vários recursos de imagem.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_picture\"" 
+        +"target=\"_blank\">Exemplo &lt;picture&gt;<a>"
+    ],
+    [
+        "&lt;pre&gt;&lt;/pre&gt;",
+        "Define o texto pré-formatado, é exibido em uma fonte de largura fixa e preserva"
+        + "os espaços e as quebras de linha. O texto será exibido exatamente como escrito"
+        + "no código-fonte HTML.",
+        "&lt;pre&gt;Este elemento est&aacute; pr&eacute;-formatado, "
+        +"&Eacute; exibido desse modo.A fonde tem largura fixa e preserva os espa&ccedil;os"
+        +"e as quebras de linha.&lt;/pre&gt;",
+        "<pre>"
+        + "Este elemento está pré-formatado, \nÉ exibido desse modo."
+        + "\nA fonde tem largura fixa e preserva os espaços"
+        + "\ne as quebras de linha."
+        +"</pre>"
+    ],
+    [
+        "&lt;progress&gt;&lt;/progress&gt;",
+        "Representa uma barra de progresso.",
+        "&lt;label for=&quot;file&quot;&gt;Downloading progress:&lt;/label&gt;"
+        + "&lt;progress id=&quot;file&quot; value=&quot;54&quot; max=&quot;100&quot;&gt;"
+        + "54% &lt;/progress&gt;",
+        "<label for=\"file\">Downloading progress:</label><progress id=\"file\" value=\"54\"" 
+        + "max=\"100\">54% </progress>"
+    ],
+    [
+        "&lt;q&gt;&lt;/q&gt;",
+        "Define uma pequena citação.",
+        "&lt;p&gt;HTML:&lt;q&gt; &eacute; uma linguagem de marca&ccedil;&atilde;o.&lt;/q&gt;"
+        + "Boa sorte no seu aprendizado.&lt;/p&gt;",
+        "<p>HTML:<q> é uma linguagem de marcação.</q>Boa sorte no seu aprendizado.</p>"
+    ],
+    [
+        "&lt;rp&gt;&lt;/rp&gt;",
+        "Pode ser usada para fornecer parênteses ao redor de um texto ruby, "
+        +"para ser mostrado por navegadores que não suportam anotações ruby."
+        +" Usado para mostrar anotações &lt;ruby&gt;, que consiste em um ou mais caracteres que precisam "
+        +"de uma explicação / pronúncia.",
+        "&lt;ruby&gt;漢 &lt;rt&gt;&lt;rp&gt;(&lt;/rp&gt;ㄏㄢˋ&lt;rp&gt;)&lt;/rp&gt;&lt;/rt&gt;&lt;/ruby&gt;",
+        "<ruby>漢 <rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt></ruby>"
+    ],
+    [
+        "&lt;rt&gt;&lt;/rt&gt;",
+        "Define uma explicação / pronúncia de caracteres (para tipografia do Leste Asiático)",
+        "&lt;ruby&gt;漢 &lt;rt&gt; ㄏㄢˋ &lt;/rt&gt;&lt;/ruby&gt;",
+        "<ruby>漢 <rt> ㄏㄢˋ </rt></ruby>"
+    ],
+    [
+        "&lt;ruby&gt;&lt;/ruby&gt;",
+        "Define uma anotação em rubi (para tipografia do Leste Asiático)",
+        "&lt;ruby&gt;漢 &lt;rt&gt; ㄏㄢˋ &lt;/rt&gt;&lt;/ruby&gt;",
+        "<ruby>漢 <rt> ㄏㄢˋ </rt></ruby>"
+    ],
+    [
+        "&lt;s&gt;&lt;/s&gt;",
+        "especifica o texto que não é mais correto, preciso ou relevante."
+        + "O texto será exibido com uma linha atravessada.",
+        "&lt;p&gt;&lt;s&gt;Restam apenas 20 ingressos!&lt;/s&gt;&lt;/p&gt;&lt;p&gt;ESGOTADO!&lt;/p&gt;",
+        "<p><s>Restam apenas 20 ingressos!</s></p><p>ESGOTADO!</p>"
+    ],
+    [
+        "&lt;samp&gt;&lt;/samp&gt;",
+        "Usada para definir a saída de amostra de um programa de computador.",
+        "&lt;p&gt;&lt;samp&gt;Arquivo n&atilde;o encontrado.&lt;br&gt;Pressione F1 para "
+        + "continuar&lt;/samp&gt;&lt;/p&gt;",
+        "<p><samp>Arquivo não encontrado.<br>Pressione F1 para continuar</samp></p>"
+    ],
+    [
+        "&lt;script&gt;&lt;/script&gt;",
+        "Usada para incorporar um script do lado do cliente (JavaScript), contém instruções"
+        + "de script ou aponta para um arquivo de script externo por meio do atributo src.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_script\"" 
+        +"target=\"_blank\">Exemplo &lt;script&gt;<a>"
+    ],
+    [
+        "&lt;section&gt;&lt;/section&gt;",
+        "Define uma seção em um documento.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_section\"" 
+        +"target=\"_blank\">Exemplo &lt;section&gt;<a>"
+    ],
+    [
+        "&lt;select&gt;&lt;/select&gt;",
+        "Usado para criar uma lista suspensa.",
+        "&lt;label for=&quot;opcao&quot;&gt;Escolha uma op&ccedil;&atilde;o:&lt;/label&gt;&lt;"
+        + "select name=&quot;opcao&quot; id=&quot;cars&quot;&gt;&lt;option&gt;Op&ccedil;&atilde;o 1&lt;"
+        + "/option&gt;&lt;option&gt;Op&ccedil;&atilde;o 2&lt;/option&gt;&lt;/select&gt;",
+        "<label for=\"opcao\">Escolha uma opção:</label><select name=\"opcao\" id=\"cars\">"
+        + "<option>Opção 1</option><option>Opção 2</option></select>"
+    ],
+    [
+        "&lt;small&gt;&lt;/small&gt;",
+        "Define um texto menor",
+        "&lt;p&gt;Texto normal.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Texto com a tag &amp;"
+        + "lt;small&amp;gt;&lt;/small&gt;&lt;/p&gt;",
+        "<p>Texto normal.</p><p><small>Texto com a tag &lt;small&gt;</small></p>"
+    ],
+    [
+        "&lt;source&gt;&lt;/source&gt;",
+        "Usada para especificar vários recursos de mídia para elementos de mídia,  permite que"
+        + "você especifique arquivos alternativos de vídeo / áudio / imagem que o navegador "
+        + "pode escolher, com base no suporte do navegador ou na largura da janela de visualização."
+        + "O navegador escolherá o primeiro <source> compatível.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_source_src\"" 
+        +"target=\"_blank\">Exemplo &lt;source&gt;<a>"
+    ],
+    [
+        "&lt;span&gt;&lt;/span&gt;",
+        "É um contêiner embutido usado para marcar uma parte de um texto ou uma parte de um documento.",
+        "&lt;p&gt;Eu sou um par&aacute;grafo. &lt;span id=&quot;exemplo-span&quot;&gt;"
+        + "Eu sou um &lt;span&gt; estilizado.&lt;/span&gt;&lt;/p&gt;",
+        "<p>Eu sou um parágrafo. <span id=\"exemplo-span\">Eu sou um &lt;span&gt; estilizado.</span></p>"
+    ],
+    [
+        "<p class=\"obsoleto\">&lt;strike&gt;&lt;/strike&gt;</p>",
+        "<p class=\"obsoleto\">Obsoleto, não compatível com HTML5.</p>",
+        "<p class=\"obsoleto\">Sem exemplo.</p>",
+        ""
+    ],
+    [
+        "&lt;strong&gt;&lt;/strong&gt;",
+        "Usada para definir texto de grande importância. O conteúdo interno é normalmente exibido em negrito.",
+        "&lt;p&gt;&lt;strong&gt;Sou um par&aacute;grafo em negrito!&lt;/strong&gt;&lt;/p&gt;",
+        "<p><strong>Sou um parágrafo em negrito!</strong></p>"
+    ],
+    [
+        "&lt;style&gt;&lt;/style&gt;",
+        "Usada para definir informações de estilo (CSS) para um documento.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_style\"" 
+        +"target=\"_blank\">Exemplo &lt;style&gt;<a>"
+    ],
+    [
+        "&lt;sub&gt;&lt;/sub&gt;",
+        "Define um texto com subscrito",
+        "&lt;p&gt;Esse texto tem &lt;sub&gt;subscrito&lt;/sub&gt;.&lt;/p&gt;",
+        "<p>Esse texto tem <sub>subscrito</sub>.</p>"
+    ],
+    [
+        "&lt;details&gt;&lt;/details&gt;",
+        "Define um título visível para o elemento &lt;details&gt;. O título pode ser clicado "
+        + "para visualizar / ocultar os detalhes.",
+        "&lt;details&gt;&lt;summary&gt;Sou o t&iacute;tulo do &amp;lt;details&amp;gt;&lt;/summary&gt;"
+        + "&lt;p&gt;Aqui est&aacute; uma descri&ccedil;&atilde;o para fins dedemosntra&ccedil;&atilde;"
+        + "o.&lt;/p&gt;&lt;/details&gt;",
+        "<details><summary>Sou o título do &lt;details&gt;</summary><p>Aqui está uma descrição para fins dedemosntração.</p></details>"
+    ],
+    [
+        "&lt;sup&gt;&lt;/sup&gt;",
+        "Define o texto sobrescrito.",
+        "&lt;p&gt;Esse texto tem &lt;sub&gt;sobrescrito&lt;/sub&gt;.&lt;/p&gt;",
+        "<p>Esse texto tem <sup>sobrescrito</sup>.</p>"
+    ],
+    [
+        "&lt;svg&gt;&lt;/svg&gt;",
+        "Define um contêiner para gráficos SVG.O SVG possui vários métodos para desenhar"
+        + "caminhos, caixas, círculos, texto e imagens gráficas.",
+        "&lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;&lt;circle cx=&quot;20&quot;"
+        + "cy=&quot;30&quot; r=&quot;10&quot; stroke=&quot;red&quot; stroke-width=&quot;1&quot;"
+        +"fill=&quot;yellow&quot; /&gt;Sorry, your browser does not support inline SVG.&lt;/svg&gt;",
+        "<svg width=\"100\" height=\"100\"><circle cx=\"20\" cy=\"20\" r=\"10\" stroke=\"red\""
+        +"stroke-width=\"1\" fill=\"yellow\"/>Sorry, your browser does not support inline SVG.</svg>"
+    ],
+    [
+        "&lt;table&gt;&lt;/table&gt;",
+        "Define uma tabela, mas não mostra a tabela no navegador é necessario outros elementos"
+        +"para formar a tabela.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_table_test\"" 
+        +"target=\"_blank\">Exemplo &lt;table&gt;<a>"
+    ],
+    [
+        "&lt;tbody&gt;&lt;/tbody&gt;",
+        "Usada para agrupar o conteúdo do corpo em uma tabela HTML, é usado em conjunto "
+        + "com os elementos &lt;thead&gt; e &lt;tfoot&gt; para especificar cada parte de uma tabela "
+        + "(corpo, cabeçalho, rodapé).",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_tbody\"" 
+        +"target=\"_blank\">Exemplo &lt;tbody&gt;<a>"
+    ],
+    [
+        "&lt;td&gt;&lt;/td&gt;",
+        "Usado para criar céculas no corpo da tabela",
+        "&lt;table&gt;&lt;tr&gt;&lt;td&gt;C&eacute;cula 1&lt;/td&gt;&lt;td&gt;C&eacute;cula 2&lt;"
+        + "/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C&eacute;cula 3&lt;/td&gt;&lt;td&gt;C&eacute;cula 4"
+        + "&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;",
+        "<table id=\"exemplo-td\"><tr><td>Cécula 1</td><td>Cécula 2</td></tr><tr><td>Cécula 3</td><td>Cécula 4</td>"
+        + "</tr></table>"
+    ],
+    [
+        "&lt;template&gt;&lt;/template&gt;",
+        "Usada como um contêiner para manter algum conteúdo HTML oculto do usuário quando a página é carregada.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_template\"" 
+        +"target=\"_blank\">Exemplo &lt;template&gt;<a>"
+    ],
+    [
+        "&lt;textarea&gt;&lt;/textarea&gt;",
+        "Define um controle de entrada de texto de várias linhas.",
+        "&lt;textarea&gt;&lt;/textarea&gt;",
+        "<textarea></textarea>"
+    ],
+    [
+        "&lt;tfoot&gt;&lt;/tfoot&gt;",
+        "Agrupa o conteúdo do rodapé em uma tabela.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_tbody\"" 
+        +"target=\"_blank\">Exemplo &lt;tfoot&gt;<a>"
+    ],
+    [
+        "&lt;th&gt;&lt;/th&gt;",
+        "Contém informações de cabeçalho da tabela.",
+        "&lt;table&gt;&lt;tr&gt;&lt;th&gt;Cabe&ccedil;alho 1&lt;/th&gt;&lt;th&gt;Cabe&ccedil;alho 2&lt;"
+        + "/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C&eacute;lula 1&lt;/td&gt;&lt;td&gt;C&eacute;lula 2&lt;"
+        + "/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C&eacute;lula 3&lt;/td&gt;&lt;td&gt;$C&eacute;lula 4&lt;"
+        + "/td&gt;&lt;/tr&gt;&lt;/table&gt;",
+        "<table id=\"exemplo-td\"><tr><th>Cabeçalho 1</th><th>Cabeçalho 2</th></tr><tr><td>Célula 1</td><td>Célula 2</td>"
+        + "</tr><tr><td>Célula 3</td><td>$Célula 4</td></tr></table>"
+    ],
+    [
+        "&lt;thead&gt;&lt;/thead&gt;",
+        "Agrupa o conteúdo do cabeçalho da tabela",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_tbody\"" 
+        +"target=\"_blank\">Exemplo &lt;thead&gt;<a>"
+    ],
+    [
+        "&lt;time&gt;&lt;/time&gt;",
+        "Define uma hora específica (ou data e hora).",
+        "&lt;p&gt;Abrimos &agrave;s &lt;time&gt;13:30&lt;/time&gt;&lt;/p&gt;",
+        "<p>Abrimos às <time>13:30</time></p>"
+    ],
+    [
+        "&lt;title&gt;&lt;/title&gt;",
+        "Define o título do documento HTML, mostrado na aba/janela do navegador.",
+        "A tag &lt;title&gt; fica dentro da tag &lt;head&gt;",
+        "Insepcione esse documento para encontrar a tag &lt;title&gt;"
+    ],
+    [
+        "&lt;tr&gt;&lt;/tr&gt;",
+        "Usado para criar céculas no corpo da tabela",
+        "&lt;table id=\&quot;exemplo-td\&quot;&gt;&lt;tr&gt;&lt;td&gt; Linha 1 Cel 1&lt;/td&gt;&lt;td&gt;"
+        + "Linha 1 Cel.2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;",
+        "<table id=\"exemplo-td\"><tr><td> Linha 1 Cel 1</td><td>Linha 1 Cel.2</td></tr></table>"
+    ],
+    [
+        "&lt;track &gt;",
+        "Este elemento é usado para especificar legendas, arquivos de legendas ou outros arquivos"
+        + " contendo texto, que devem ser visíveis durante a reprodução da mídia.",
+        "Sem exemplo",
+        ""
+    ],
+    [
+        "<p class=\"obsoleto\">&lt;tt&gt;&lt;/tt&gt;</p>",
+        "<p class=\"obsoleto\">Obsoleto, não compatível com HTML5.</p>",
+        "<p class=\"obsoleto\">Sem exemplo.</p>",
+        ""
+    ],
+    [
+        "&lt;u&gt;&lt;/u&gt;",
+        "Representa algum texto não articulado e com estilo diferente do texto normal,"
+        + " como palavras com erros ortográficos ou nomes próprios em texto chinês.",
+        "&lt;p&gt;T&aacute; &lt;u&gt;serto&lt;/u&gt;&lt;/p&gt;",
+        "<p>Tá <u>serto</u></p>"
+    ],
+    [
+        "&lt;ul&gt;&lt;/ul&gt;",
+        "Define uma lista não ordenada (com marcadores).",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_lists4\"" 
+        +"target=\"_blank\">Exemplo &lt;ul&gt;<a>"
+    ],
+    [
+        "&lt;var&gt;&lt;/var&gt;",
+        "Usada para definir uma variável na programação ou em uma expressão matemática."
+        + "O conteúdo interno é normalmente exibido em itálico ",
+        "&lt;p&gt;Sou a vari&aacute;vel  &lt;var&gt;x&lt;/var&gt; e eu a vari&aacute;vel"
+        + "&lt;var&gt;y&lt;/var&gt;.&lt;/p&gt;",
+        "<p>Sou a variável  <var>x</var> e eu a variável <var>y</var>.</p>"
+    ],
+    [
+        "&lt;video&gt;&lt;/video&gt;",
+        "Usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme "
+        + "ou outros fluxos de vídeo. Contém uma ou mais tags &lt;source&gt; com diferentes fontes de vídeo."
+        + "O navegador escolherá a primeira fonte que suporta.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_video\"" 
+        +"target=\"_blank\">Exemplo &lt;video&gt;<a>"
+    ],
+    [
+        "&lt;wbr&gt;",
+        "Especifica onde em um texto seria correto adicionar uma quebra de linha.",
+        "Clique no link para ver o exemplo.",
+        "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_wbr\"" 
+        +"target=\"_blank\">Exemplo &lt;wbr&gt;<a>"
     ]
 ];

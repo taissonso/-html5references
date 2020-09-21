@@ -4,7 +4,7 @@
  * colunas basta adicionar mais valores ao vetor.
  */
 var descricaoTags = ['Tags', 'Descrição', 'Exemplo', 'Resultado'];
-var descricaoAtributo = ['Atributo', 'Pertence a Tag', 'Descrição'];
+var descricaoAtributo = ['Atributo', 'Usado na Tag', 'Descrição'];
 
 /** 
  *  Recebe os vetores dos arquivos para passar como parâmetros para a função criarTabela. 

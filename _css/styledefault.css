@@ -167,11 +167,6 @@ body {
 .tabela span {
     display: none;
 }
-.tabela tbody tr:last-child {
-    background: red;
-    margin-bottom: 200px;
-}
-
 
 .logoHTML { 
     max-width: 100%;

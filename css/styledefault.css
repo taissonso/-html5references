@@ -10,6 +10,7 @@ body {
     width: 100%;
 }
 
+/* --- CABEÇALHO --- */
 .header{
     display: flex;
     flex-direction: column;
@@ -17,6 +18,16 @@ body {
     border-bottom: 1px solid #c7c7c7;
 }
 
+.titulo {
+    font-size: 5rem;
+    font-family: sans-serif;
+    color: #E34F26;
+    text-shadow: 4px 4px 4px #000000;
+    opacity: 0.8;
+}
+
+
+/* --- ONDE VAI O CONTEÚDO ---*/
 .main {
     display: flex;
     flex-direction: column;
@@ -30,9 +41,8 @@ body {
     text-align: center;
     padding: 0;
     margin: 25px 0 0 0;
-    width: 100%;
     background-color: #ffffff;
-    
+    width: 90%;
 }
 
 .nav-abas input[type=radio]{
@@ -45,21 +55,21 @@ body {
     line-height: 50px;
     border: 1px solid #000000;
     display: inline-block;
-    border-radius: 25px;
 }
 
 .nav-abas input[type=radio]:checked + label {
-    background-color: #f303b7;
+    background-color: #e78523;
 }
 
-/** --- CONTEÚDO --- **/
+
+/* --- CONTEÚDO --- */
 .container-conteudo {
-    display: block;
-    width: 80%;
+    width: 90%;
 }
 
 .conteudo {
     display: none;
+
 }
 
 .container-conteudo .conteudo.classe-conteudo {
@@ -67,16 +77,12 @@ body {
 }
 
 
-
-.container {
-    width: 80%;
-}
-
+/* --- INPUT DE BUSCA --- */
 .search {
-    background-image: url('../_img/search.png');
+    background-image: url('../image/search.png');
     background-repeat: no-repeat;
     background-position: right 2% bottom 50%;
-    width: 80%;
+    width: 90%;
     margin: 20px 0 0 0;
     padding: 10px 0px 10px 25px;
     border-radius: 8px;
@@ -87,8 +93,58 @@ body {
     color: #000000;
 }
 
+/* --- TABELA ---*/
+/* Deixa as bordas coladas e mantém uma distância do input de busca */
+.tabela {
+    border-collapse: collapse;
+    margin: 35px 0 0 0;
+}
 
-/*Elementos dentro das tabelas que receberam alguma classe para fins de demonstração*/
+/* Define a cor de fundo e altura do cabeçalho*/
+.tabela thead th {
+    background-color: #bfbfbf;
+    border: 1px solid #000000;
+    height: 40px;
+    font-size: 18px;
+}
+
+/* Deixa as tags span ocultas para telas maiores de 800px*/
+.tabela span {
+    display: none;
+}
+
+.tabela tbody td {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 4px 10px 4px 10px;
+    font-size: 16px;
+}
+
+.tabela tbody tr:hover{
+    background-color: #ffd1b3;
+}
+
+/* --- Rodapé --- */
+footer {
+    color: #ffffff;
+    background-color: #000000;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    margin-top: 100px;
+    position: sticky;
+    text-align: center;
+}
+
+ /*Configuração do ul e li do Rodape*/
+footer ul, li{
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 7px;
+    padding: 0 15px 0 15px;
+}
+
+/* --- Elementos dentro das tabelas que receberam alguma classe para fins de demonstração --- */
 
 .exemplo-body {
     border: 1px solid #000000;
@@ -147,31 +203,4 @@ body {
     max-width: 100%;
     height: auto;
     margin: 1% 0 0 0;
-}
-
-.titulo {
-    font-size: 5rem;
-    font-family: sans-serif;
-    color: #E34F26;
-    text-shadow: 4px 4px 4px #000000;
-    opacity: 0.8;
-}
-
-footer {
-    color: #ffffff;
-    background-color: #000000;
-    height: 50px;
-    width: 100%;
-    bottom: 0;
-    margin-top: 100px;
-    position: sticky;
-    text-align: center;
-}
-
- /*Configuração do ul e li do Rodape*/
-footer ul, li{
-    box-sizing: border-box;
-    display: inline-block;
-    margin-top: 7px;
-    padding: 0 15px 0 15px;
 }

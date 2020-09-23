@@ -8,7 +8,7 @@ header{
     padding: 20px 0 10px 0;
 }
 
-.titulo, .tabela thead {
+ .tabela thead {
     display: none;
 }
 
@@ -23,51 +23,56 @@ header{
 }
 
 /* --- Tabela --- */
-/*Dar um espaço entre a barra de pesquisa e a tabela*/
 .tabela {
     padding: 0;
     border-collapse: collapse;
-    margin-top: 35px;
 }
 
 .tabela tbody tr {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 25px;
+    margin-bottom: 35px;
 }
 
-.tabela td {
+.tabela tbody td {
     border: 1px solid #000000;
     word-wrap: break-word;
     width: 50%;
     position: relative;
     display: inline-block;
     text-align: center;
-    padding: 25px 10px 10px 10px;
+    padding: 45px 10px 25px 10px;
 }
 
-
+/* Mostrando os span's, definindo a posição e colocando uma borda embaixo*/
 .tabela span {
     display: block;
     position: absolute;
-    width: 50%;
+    width: 100%;
     top: 0;
     left: 0;
-    background-color: #999999;
+    background-color: #bfbfbf;
+    padding: 4px 0 4px 0;
     border-bottom: 1px solid #000000;
 }
 
-/*Fazendo os spans internos aparecer para ficar mais fácil a leitura dos campos da tabela em celulares
-.tabela tr td span {
-    display: block;
-    font-size: 70%;
-    background: #c0bfbf;
-    position: relative;
-    padding: 2px;
-    top:0;
-    left: 0;
-    width: 100%;
-    border-bottom: 1px solid;
+
+
+/* Remove as bordas extras da tabela atributos*/
+#tabela-tags tbody td:nth-child(2n-1){
+    border-right: none;
 }
 
-*/
+#tabela-tags tbody td:nth-child(-n + 2){
+    border-bottom:none ;
+}
+
+
+/* Remove as bordas extras da tabela atributos*/
+#tabela-atributos td:nth-child(2){
+    border-left: none;
+}
+
+#tabela-atributos td:last-child{
+    border-top: none;
+}

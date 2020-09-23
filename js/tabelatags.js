@@ -79,7 +79,7 @@ var vetorTags = [
         "Usada para incorporar conteúdo de som em um documento, como músicas ou outros fluxos de áudio.",
         "&lt;audio controls class=&quot;audio&quot;&gt;&lt;source src=&quot;_audio/easports.mp3&quot;"
         +"type=&quot;audio/mp3&quot;&gt;&lt;/audio&gt;",
-        "<audio controls class=\"audio\"> <source src=\"_audio/easports.mp3\" type=\"audio/mp3\"></audio>"
+        "<audio controls class=\"audio\"> <source src=\"./audio/easports.mp3\" type=\"audio/mp3\"></audio>"
     ],
     [
         "&lt;b&gt;&lt;/b&gt;",
@@ -299,16 +299,16 @@ var vetorTags = [
     [
         "&lt;figcaption&gt;&lt;/figcaption&gt;",
         "Define uma legenda para um elemento &lt;figure&gt;&lt",
-        "&lt;figure&gt;&lt;img src=\&quot;./_img/github-grey-25.png\&quot;&gt;&lt;figcaption&gt;"
+        "&lt;figure&gt;&lt;img src=\&quot;./image/github-grey-25.png\&quot;&gt;&lt;figcaption&gt;"
         + "Figura.1 - GitHub&lt;/figcaption&lt;/figure&gt;",
-        "<figure><img src=\"./_img/github-grey-25.png\"><figcaption>Figura.1 - "
+        "<figure><img src=\"./image/github-grey-25.png\"><figcaption>Figura.1 - "
         + "GitHub</figcaption></figure>"
     ],
     [
         "&lt;figure&gt;&lt;/figure&gt;",
         "Especifica conteúdo independente, como ilustrações, diagramas, fotos, listagens de código, etc.",
-        "&lt;figure&gt;&lt;img src=\&quot;./_img/github-grey-25.png\&quot;&gt;&lt;/figure&gt;",
-        "<figure><img src=\"./_img/instagram-grey-25.png\"></figure>"
+        "&lt;figure&gt;&lt;img src=\&quot;./image/github-grey-25.png\&quot;&gt;&lt;/figure&gt;",
+        "<figure><img src=\"./image/instagram-grey-25.png\"></figure>"
     ],
     [
         "<p class=\"obsoleto\">&lt;font&gt;&lt;/font&gt;</p>",
@@ -402,8 +402,8 @@ var vetorTags = [
     [
         "&lt;img&gt;",
         "Define uma imagem.",
-        "&lt;img src=\&quot;./_img/twitter-grey-3-25.png\&quot;&gt;",
-        "<img src=\"./_img/twitter-grey-3-25.png\">"
+        "&lt;img src=\&quot;./image/twitter-grey-3-25.png\&quot;&gt;",
+        "<img src=\"./image/twitter-grey-3-25.png\">"
     ],
     [
         "&lt;input&gt;",

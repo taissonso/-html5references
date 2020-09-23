@@ -77,9 +77,9 @@ var vetorTags = [
     [
         "&lt;audio&gt;&lt;/audio&gt;",
         "Usada para incorporar conteúdo de som em um documento, como músicas ou outros fluxos de áudio.",
-        "&lt;audio controls class=&quot;audio&quot;&gt;&lt;source src=&quot;audio/easports.mp3&quot;"
+        "&lt;audio controls class=&quot;audio&quot;&gt;&lt;source src=&quot;_audio/easports.mp3&quot;"
         +"type=&quot;audio/mp3&quot;&gt;&lt;/audio&gt;",
-        "<audio controls class=\"audio\"> <source src=\"audio/easports.mp3\" type=\"audio/mp3\"></audio>"
+        "<audio controls class=\"audio\"> <source src=\"_audio/easports.mp3\" type=\"audio/mp3\"></audio>"
     ],
     [
         "&lt;b&gt;&lt;/b&gt;",

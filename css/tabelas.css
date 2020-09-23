@@ -1,0 +1,11 @@
+.tabela {
+    border-collapse: collapse;
+}
+
+.tabela td {
+    border: 1px solid #000000;
+}
+
+.tabela span {
+    display: none;
+}

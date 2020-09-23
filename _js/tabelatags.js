@@ -292,9 +292,9 @@ var vetorTags = [
         + "Nome:&lt;/label&gt;&lt;input type=\&quot;text\&quot; name=\&quot;fname\&quot;&gt;&lt;"
         + "br&gt;&lt;br&gt;&lt;label for=\&quot;lname\&quot;&gt;Sobrenome:&lt;/label&gt;&lt;"
         + "input type=\&quot;text\&quot; name=\&quot;lname\&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/fieldset&gt;",
-        "<fieldset><label for=\"fname\">Nome:</label>"
+        "<div = class=\"exemplo-fieldset\"><fieldset><label for=\"fname\">Nome:</label>"
         + "<input type=\"text\" name=\"fname\"><br><br><label for=\"lname\">Sobrenome:</label>"
-        + "<input type=\"text\" name=\"lname\"><br><br></fieldset>"
+        + "<input type=\"text\" name=\"lname\"><br><br></fieldset></div>"
     ],
     [
         "&lt;figcaption&gt;&lt;/figcaption&gt;",
@@ -439,9 +439,9 @@ var vetorTags = [
         + "fname\&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;label for=\&quot;lname\&quot;&gt;"
         + "Sobrenome:&lt;/label&gt;&lt;input type=\&quot;text\&quot; name=\&quot;lname\&quot;"
         + "&gt;&lt;br&gt;&lt;br&gt;&lt;/fieldset&gt;",
-        "<fieldset><legend>Pessoa:</legend><label for=\"fname\">Nome:</label><input type=\"text\" "
+        "<div class=\"exemplo-fieldset\"><fieldset><legend>Pessoa:</legend><label for=\"fname\">Nome:</label><input type=\"text\" "
         + "name=\"fname\"><br><br><label for=\"lname\">Sobrenome:</label><input type=\"text\" "
-        + "name=\"lname\"><br><br></fieldset>"
+        + "name=\"lname\"><br><br></fieldset></div>"
     ],
     [
         "&lt;li&gt;&lt;/li&gt;",
@@ -588,8 +588,8 @@ var vetorTags = [
         +"&Eacute; exibido desse modo.A fonde tem largura fixa e preserva os espa&ccedil;os"
         +"e as quebras de linha.&lt;/pre&gt;",
         "<pre>"
-        + "Este elemento está pré-formatado, \nÉ exibido desse modo."
-        + "\nA fonde tem largura fixa e preserva os espaços"
+        + "Este elemento está \npré-formatado, \nÉ exibido desse modo."
+        + "\nA fonte tem largura fixa\n e preserva os espaços"
         + "\ne as quebras de linha."
         +"</pre>"
     ],

@@ -7,6 +7,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    width: 100%;
 }
 
 .header{
@@ -29,7 +30,7 @@ body {
     text-align: center;
     padding: 0;
     margin: 25px 0 0 0;
-    width: 80%;
+    width: 100%;
     background-color: #ffffff;
     
 }
@@ -59,7 +60,6 @@ body {
 
 .conteudo {
     display: none;
-    width: 100%;
 }
 
 .container-conteudo .conteudo.classe-conteudo {
@@ -67,7 +67,7 @@ body {
 }
 
 
-/*TABELA*/
+
 .container {
     width: 80%;
 }
@@ -87,12 +87,6 @@ body {
     color: #000000;
 }
 
-#tabela-tags, #tabela-atributos {
-    width: 100%;
-    text-align: center;
-    margin: 25px 0 0 0;
-    border-collapse: collapse;
-}
 
 /*Elementos dentro das tabelas que receberam alguma classe para fins de demonstração*/
 
@@ -134,38 +128,19 @@ body {
     color: white;
 }
 
+.exemplo-fieldset input{
+    width: 80%;
+}
+
+
 .obsoleto {
     color:#ff0000;
+    text-align: center;
 }
 
 .audio {
     width: 150px;
     text-align: center;
-}
-
-/* Tabelas*/
-.tabela thead {
-    background-color: #000000;
-    font-size: 16px;
-    color:green;
-}
-
-.tabela td, .tabela th {
-    padding: 10px;
-    border: 1px solid #000000;
-    font-size: 14px;  
-}
-
-.tabela tbody tr:hover {
-    background-color: #ff5b29;
-}
-
-.tabela tbody tr:hover span{
-    color: #000000;
-}
-
-.tabela span {
-    display: none;
 }
 
 .logoHTML { 

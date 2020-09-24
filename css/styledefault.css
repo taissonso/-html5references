@@ -7,7 +7,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    width: 100%;
+    min-width: 100%;
 }
 
 /* --- CABEÇALHO --- */
@@ -42,7 +42,10 @@ body {
     padding: 0;
     margin: 25px 0 0 0;
     background-color: #ffffff;
-    width: 90%;
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+    color: #1a1a1a;
 }
 
 .nav-abas input[type=radio]{
@@ -51,20 +54,39 @@ body {
 
 .nav-abas input[type=radio] + label {
     width: 50%;
-    height: 50px;
+    height: 55px;
     line-height: 50px;
     border: 1px solid #000000;
     display: inline-block;
+    position: relative;
+    background-color: #ffd1b3;
+    padding-bottom: 25px;
 }
 
 .nav-abas input[type=radio]:checked + label {
     background-color: #e78523;
 }
 
+.nav-abas input[type=radio] + label::after {
+    content: "";
+    position: absolute; /*Para ficar por cima do conteúdo*/
+    bottom: 0;  /*Posicionando a "borda"*/
+    left: 0;
+    width: 100%; /*Para ir até o final do elemento*/
+    height: 7px;
+    transform: scaleX(0); /*Aqui o pulo do gato, não faço o aumento da */
+    transition: transform 1s ease;
+    transform-origin: bottom right;
+    background: #339933;
+}
 
+.nav-abas input[type=radio] + label:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
 /* --- CONTEÚDO --- */
 .container-conteudo {
-    width: 90%;
+    width: 80%;
 }
 
 .conteudo {
@@ -82,7 +104,7 @@ body {
     background-image: url('../image/search.png');
     background-repeat: no-repeat;
     background-position: right 2% bottom 50%;
-    width: 90%;
+    width: 80%;
     margin: 20px 0 0 0;
     padding: 10px 0px 10px 25px;
     border-radius: 8px;
@@ -100,12 +122,16 @@ body {
     margin: 35px 0 0 0;
 }
 
+
 /* Define a cor de fundo e altura do cabeçalho*/
+
 .tabela thead th {
     background-color: #bfbfbf;
     border: 1px solid #000000;
     height: 40px;
-    font-size: 18px;
+    font-size: 1em;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Deixa as tags span ocultas para telas maiores de 800px*/
@@ -113,11 +139,14 @@ body {
     display: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 .tabela tbody td {
     border: 1px solid #000000;
     text-align: center;
-    padding: 4px 10px 4px 10px;
-    font-size: 16px;
+    padding: 15px 10px 15px 10px;
+    font-size: 1em;
+    line-height: 3vh;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .tabela tbody tr:hover{
@@ -125,19 +154,21 @@ body {
 }
 
 /* --- Rodapé --- */
-footer {
+.rodape {
+    clear: both;
     color: #ffffff;
-    background-color: #000000;
+    background-color: #333333;
     height: 50px;
     width: 100%;
     bottom: 0;
-    margin-top: 100px;
+    margin-top: 25%;
     position: sticky;
     text-align: center;
 }
 
+
  /*Configuração do ul e li do Rodape*/
-footer ul, li{
+.rodape ul, li{
     box-sizing: border-box;
     display: inline-block;
     margin-top: 7px;
@@ -152,15 +183,13 @@ footer ul, li{
 }
 
 .exemplo-header {
-    height: 35px;
-    line-height: 35px;
-    border-bottom: 1px solid #000000;
+    border: 1px solid #000000;
     background-color: #f303b7;
+    
 }
 
 .exemplo-footer {
     border: 1px solid #000000;
-
 }
 
 .div{

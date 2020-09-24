@@ -13,7 +13,7 @@ var vetorAtributos = [
     ],
     [
         "accesskey",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "Especifica uma tecla de atalho para ativar / focar um elemento."
     ],
     [
@@ -29,7 +29,7 @@ var vetorAtributos = [
     [
         "alt",
         "<p>&lt;area&gt;</p><p>&lt;img&gt;</p><p>&lt;input&gt;</p>",
-        "fornece informações alternativas para uma imagem se um usuário por algum motivo não puder visualizá-la"
+        "Fornece informações alternativas para uma imagem se um usuário por algum motivo não puder visualizá-la "
         + "(devido à conexão lenta, um erro no atributo src ou se o usuário usar um leitor de tela)."
     ],
     [
@@ -66,7 +66,7 @@ var vetorAtributos = [
     [
         "charset",
         "<p>&lt;meta&gt;</p><p>&lt;script&gt;</p>",
-        "Especifica a codificação de caracteres para o documento"
+        "Especifica a codificação de caracteres para o documento."
     ],
     [
         "checked",
@@ -80,7 +80,7 @@ var vetorAtributos = [
     ],
     [
         "class",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "Especifica um ou mais nomes de classe para um elemento."
     ],
     [
@@ -105,7 +105,7 @@ var vetorAtributos = [
     ],
     [
         "contenteditable",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "Especifica se o conteúdo de um elemento é editável ou não."
     ],
     [
@@ -125,7 +125,7 @@ var vetorAtributos = [
     ],
     [
         "data-*",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "É usado para armazenar/incorporar dados personalizados privados para a página ou aplicativo."
     ],
     [
@@ -147,7 +147,7 @@ var vetorAtributos = [
     ],
     [
         "dir",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "Especifica a direção do texto do conteúdo do elemento."
     ],
     [
@@ -170,7 +170,7 @@ var vetorAtributos = [
     ],
     [
         "draggable",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "Especifica se um elemento é arrastável ou não."
     ],
     [
@@ -214,7 +214,7 @@ var vetorAtributos = [
     ],
     [
         "hidden",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "Deixa o elemento oculto."
     ],
     [
@@ -247,7 +247,7 @@ var vetorAtributos = [
     ],
     [
         "id",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "Especifica um identificador único para o elemento."
     ],
     [
@@ -269,7 +269,7 @@ var vetorAtributos = [
     ],
     [
         "lang",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "Especifica o idioma do conteúdo do elemento."
     ],
     [
@@ -469,7 +469,7 @@ var vetorAtributos = [
         "onended",
         "<p>&lt;audio&gt;</p><p>&lt;video&gt;</p>",
         "Script a ser executado quando a mídia chegar ao fim (um evento útil para mensagens como"
-        + " \"obrigado por ouvir\")"
+        + " \"obrigado por ouvir\")."
     ],
     [
         "onerror",
@@ -505,7 +505,7 @@ var vetorAtributos = [
     [
         "onkeypress",
         "Todos os elementos visíveis.",
-        "Script a ser executado quando um usuário pressiona uma tecla"
+        "Script a ser executado quando um usuário pressiona uma tecla."
     ],
     [
         "onkeyup",
@@ -535,12 +535,12 @@ var vetorAtributos = [
         "onloadstart",
         "<p>&lt;audio&gt;</p><p>&lt;video&gt;</p>",
         "Script deve ser executado assim que o arquivo começa a carregar, antes que qualquer"
-        + " coisa seja realmente carregada"
+        + " coisa seja realmente carregada."
     ],
     [
         "onmousedown",
         "Todos os elementos visíveis.",
-        "Script a ser executado quando um botão do mouse é pressionado em um elemento"
+        "Script a ser executado quando um botão do mouse é pressionado em um elemento."
     ],
     [
         "onmousemove",
@@ -679,7 +679,7 @@ var vetorAtributos = [
         "onsuspend",
         "<p>&lt;audio&gt;</p><p>&lt;video&gt;</p>",
         "O script a ser executado ao buscar os dados da mídia é interrompido antes"
-        + " de ser completamente carregado por qualquer motivo"
+        + " de ser completamente carregado por qualquer motivo."
     ],
     [
         "ontimeupdate",
@@ -779,7 +779,7 @@ var vetorAtributos = [
         "scope",
         "<p>&lt;th&gt;</p>",
         "Especifica se uma célula de cabeçalho é um cabeçalho de uma coluna, linha ou "
-        + "grupo de colunas ou linhas"
+        + "grupo de colunas ou linhas."
     ],
     [
         "selected",
@@ -800,16 +800,16 @@ var vetorAtributos = [
     [
         "sizes",
         "<p>&lt;img&gt;</p><p>&lt;link&gt;</p><p>&lt;source&gt;</p>",
-        "Especifica o tamanho do recurso vinculado"
+        "Especifica o tamanho do recurso vinculado."
     ],
     [
         "span",
         "<p>&lt;col&gt;</p><p>&lt;colgroup&gt;</p>",
-        "Especifica o número de colunas a serem estendidas"
+        "Especifica o número de colunas a serem estendidas."
     ],
     [
         "spellcheck",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         " Especifica se o elemento deve ter sua ortografia e gramática verificadas ou não."
     ],
     [
@@ -848,12 +848,12 @@ var vetorAtributos = [
     ],
     [
         "style",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "Especifica um estilo CSS em linha para um elemento."
     ],
     [
         "tabindex",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "Especifica a ordem de tabulação de um elemento (quando o botão \"tab\" é usado para navegar)."
     ],
     [
@@ -868,12 +868,12 @@ var vetorAtributos = [
     ],
     [
         "title",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "Especifica informações extras sobre um elemento."
     ],
     [
         "translate",
-        "Atributo Global, pode usar em todas as Tags",
+        "Atributo Global, pode usar em todas as Tags.",
         "Especifica se o conteúdo de um elemento deve ser traduzido ou não."
     ],
     [

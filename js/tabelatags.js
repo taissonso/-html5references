@@ -16,7 +16,7 @@ var vetorTags = [
     [
         "&lt;!DOCTYPE&gt;", 
         "Define para o navegador o tipo de documento.",
-        "Não mostra nada no documento",
+        "Não mostra nada no documento.",
         "<!DOCTYPE>"
     ],
     [
@@ -66,7 +66,7 @@ var vetorTags = [
     ],
     [
         "&lt;aside&gt;",
-        "Representa uma seção da página, consiste em conteúdos relacionado com o conteúdo principal"
+        "Representa uma seção da página, consiste em conteúdos relacionados com o conteúdo principal "
         +"geralmente usado como barras laterais na página. Não tem nenhum efeito ao ser processado.",
         "&lt;aside&gt;&lt;h3&gt;Por que usar Mozilla Firefox?&lt;/h3&gt;&lt;p&gt;Pois &eacute;"
         + "mais seguro, pode-se navegar em abas, &eacute; customiz&aacute;vel, tem extensions,"
@@ -185,7 +185,7 @@ var vetorTags = [
     ],
     [
         "&lt;colgroup&gt;&lt;/colgroup&gt;",
-        "Especifica um grupo de uma ou mais colunas em uma tabela para formatação, deve ser filha de um elemento"
+        "Especifica um grupo de uma ou mais colunas em uma tabela para formatação, deve ser filha de um elemento "
         + "&lt;table&gt;, ap&oacute;s qualquer elemento &lt;caption&gt; e antes de qualquer elemento &lt;thead&gt;,"
         + "&lt;tbody&gt;, &lt;tfoot&gt; e &lt;tr&gt;.",
         "Clique no link para ver o exemplo.",
@@ -193,7 +193,7 @@ var vetorTags = [
     ],
     [
         "&lt;data&gt;&lt;/data&gt;",
-        "É usada para adicionar uma tradução legível por máquina de um determinado conteúdo e"
+        "É usada para adicionar uma tradução legível por máquina de um determinado conteúdo e "
         +"um valor legível por humanos para renderização em um navegador.",
         "Clique no link para ver o exemplo.",
         "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_data\" target=\"_blank\">Exemplo &lt;data&gt;<a>"
@@ -225,7 +225,7 @@ var vetorTags = [
     ],
     [
         "&lt;details&gt;&lt;/details&gt;",
-        "Define detalhes adicionais que o usuário pode visualizar ou ocultar",
+        "Define detalhes adicionais que o usuário pode visualizar ou ocultar.",
         "&lt;details&gt;&lt;p&gt;Aqui est&aacute; uma descri&ccedil;&atilde;o para fins de"
         + "demosntra&ccedil;&atilde;o.&lt;/p&gt;&lt;/details&gt;",
         "<details><p>Aqui está uma descrição para fins de demosntração.</p></details>"
@@ -239,7 +239,7 @@ var vetorTags = [
     ],
     [
         "&lt;dialog&gt;&lt;dialog/&gt;",
-        "Define uma caixa de diálogo ou subjanela, facilita a criação de diálogos"
+        "Define uma caixa de diálogo ou subjanela, facilita a criação de diálogos "
         + "pop-up e modais em uma página da web.",
         "Clique no link para ver o exemplo.",
         "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_dialog\" target=\"_blank\">Exemplo &lt;dialog&gt;<a>"
@@ -251,34 +251,34 @@ var vetorTags = [
         ""
     ],
     [
-        "&lt;div&gt;&lt;div/&gt;",
+        "&lt;div&gt;&lt;/div&gt;",
         "Define uma divisão ou seção em um documento HTML é usada como um contêiner para elementos HTML"
-        + ", qualquer tipo de conteúdo pode ser colocado dentro da &lt;div&gt;",
+        + ", qualquer tipo de conteúdo pode ser colocado dentro da &lt;div&gt;.",
         "&lt;div class=\&quot;div\&quot;&gt;&lt;h4&gt;Eu sou um &amp;lt;h4&amp;gt; dentro de uma &amp;"
         + "lt;div&amp;gt;.&lt;/h4&gt;&lt;/div&gt;",
         "<div class=\"div\"><h4>Eu sou um &lt;h4&gt; dentro de uma &lt;div&gt;.</h4></div>"
     ],
     [
         "&lt;dl&gt;&lt;/dl&gt;",
-        "Define uma lista de descrição",
+        "Define uma lista de descrição.",
         "Clique no link para ver o exemplo.",
         "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_dd_test\" target=\"_blank\">Exemplo &lt;dl&gt;<a>"
     ],
     [
         "&lt;dt&gt;&lt;/dt&gt;",
-        "Define um termo/nome em uma lista de descrição",
+        "Define um termo/nome em uma lista de descrição.",
         "Clique no link para ver o exemplo.",
         "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_dd_test\" target=\"_blank\">Exemplo &lt;dt&gt;<a>"
     ],
     [
         "&lt;em&gt;&lt;/em&gt;",
-        "Deixa o texto enfatizado",
+        "Deixa o texto enfatizado.",
         "&lt;p&gt;Deixa o texto &lt;em&gt;enfatizado&lt;/em&gt;&lt;/p&gt;",
         "<p>Deixa o texto <em>enfatizado</em></p>"
     ],
     [
         "&lt;embed&gt;",
-        "Define um contêiner para um recurso externo, como uma página da web,"
+        "Define um contêiner para um recurso externo, como uma página da web, "
         + "uma imagem, um reprodutor de mídia ou um aplicativo de plug-in.",
         "Clique no link para ver o exemplo.",
         "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_embed_html\"" 
@@ -298,7 +298,7 @@ var vetorTags = [
     ],
     [
         "&lt;figcaption&gt;&lt;/figcaption&gt;",
-        "Define uma legenda para um elemento &lt;figure&gt;&lt",
+        "Define uma legenda para um elemento &lt;figure&gt;.",
         "&lt;figure&gt;&lt;img src=\&quot;./image/github-grey-25.png\&quot;&gt;&lt;figcaption&gt;"
         + "Figura.1 - GitHub&lt;/figcaption&lt;/figure&gt;",
         "<figure><img src=\"./image/github-grey-25.png\"><figcaption>Figura.1 - "
@@ -327,7 +327,7 @@ var vetorTags = [
     ],
     [
         "&lt;form&gt;&lt;/form&gt;",
-        "Define um formulário HTML para entrada do usuário",
+        "Define um formulário HTML para entrada do usuário.",
         "&lt;form&gt;&lt;label for=&quot;fname&quot;&gt;Nome:&lt;/label&gt;&lt;"
         + "input type=&quot;text&quot; &gt;&lt;br&gt;&lt;br&gt;&lt;/form&gt;",
         "<form><label for=\"fname\">Nome:</label><input type=\"text\"><br><br></form>"
@@ -348,15 +348,15 @@ var vetorTags = [
         "&lt;h1&gt; a &lt;h6&gt;",
         "Define o título de cabeçalho ou título da página. &lt;h1&gt mais importante até o"
         + "&lt;h6&gt; de menos importancia.",
-        "&lt;h1&gt;Sou um t&iacute;tulo &amp;lt;h1&amp;gt;&lt;/h1&gt;"
-        + "&lt;h2&gt;Sou um t&iacute;tulo &amp;lt;h2&amp;gt;&lt;/h2&gt;"
-        + "&lt;h3&gt;Sou um t&iacute;tulo &amp;lt;h3&amp;gt;&lt;/h3&gt;"
-        + "&lt;h4&gt;Sou um t&iacute;tulo &amp;lt;h4&amp;gt;&lt;/h4&gt;"
-        + "&lt;h5&gt;Sou um t&iacute;tulo &amp;lt;h5&amp;gt;&lt;/h5&gt;"
-        + "&lt;h6&gt;Sou um t&iacute;tulo &amp;lt;h6&amp;gt;&lt;/h6&gt;",
-        "<h1>Sou um título &lt;h1&gt;</h1><h2>Sou um título &lt;h2&gt;</h2>"
-        + "<h3>Sou um título &lt;h3&gt;</h3><h4>Sou um título &lt;h4&gt;</h4>"
-        + "<h5>Sou um título &lt;h5&gt;</h5><h6>Sou um título &lt;h6&gt;</h6>"
+        "&lt;h1&gt;T&iacute;tulo &amp;lt;h1&amp;gt;&lt;/h1&gt;"
+        + "&lt;h2&gt;T&iacute;tulo &amp;lt;h2&amp;gt;&lt;/h2&gt;"
+        + "&lt;h3&gt;T&iacute;tulo &amp;lt;h3&amp;gt;&lt;/h3&gt;"
+        + "&lt;h4&gt;T&iacute;tulo &amp;lt;h4&amp;gt;&lt;/h4&gt;"
+        + "&lt;h5&gt;T&iacute;tulo &amp;lt;h5&amp;gt;&lt;/h5&gt;"
+        + "&lt;h6&gt;T&iacute;tulo &amp;lt;h6&amp;gt;&lt;/h6&gt;",
+        "<h1>Título &lt;h1&gt;</h1><h2>Título &lt;h2&gt;</h2>"
+        + "<h3>Título &lt;h3&gt;</h3><h4>Título &lt;h4&gt;</h4>"
+        + "<h5>Título &lt;h5&gt;</h5><h6>Título &lt;h6&gt;</h6>"
     ],
     [
         "&lt;head&gt;&lt;/head&gt;",
@@ -370,8 +370,8 @@ var vetorTags = [
         "&lt;div class=\&quot;exemplo-body\&quot;&lt;body&gt;&lt;header class=\&quot;exemplo-header"
         +" \&quot;&gt;&lt;p&gt;Eu sou o cabe&ccedil;alho&lt;/p&gt;&lt;/header&gt;&lt;p&gt;"
         + "Sou o corpo ou se&ccedil;&atilde;o&lt;/p&gt;&lt;/body&gt;&lt;/div&gt;",
-        "<div class=\"exemplo-body\"<body><header class=\"exemplo-header\"><p>Eu sou o cabeçalho</p>"
-        +"</header><p>Sou o corpo ou seção</p></body></div>"
+        "<div class=\"exemplo-header\">Sou o cabeçalho</div><div class=\"exemplo-body\">Sou o corpo"
+        +" ou seção.</div>"
     ],
     [
         "&lt;hr&gt;",
@@ -419,7 +419,7 @@ var vetorTags = [
     ],
     [
         "&lt;kbd&gt;&lt;/kbd&gt;",
-        " é usada para definir a entrada do teclado."
+        "Usada para definir a entrada do teclado."
         + "O conteúdo interno é exibido na fonte monoespaçada padrão do navegador.",
         "&lt;p&gt;Pressione &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;" 
         + "para copiar texto (Windows).&lt;/p&gt;",
@@ -427,13 +427,13 @@ var vetorTags = [
     ],
     [
         "&lt;label&gt;",
-        "Define um rótulo para um elemento &lt;input&gt;",
-        "&lt;label for=\&quot;sim\&quot;&gt;Nome: &lt;/label&gt;&lt;input type=\&quot;text\&quot;&gt;",
+        "Define um rótulo para um elemento &lt;input&gt;.",
+        "&lt;label&gt;Nome:&lt;/label&gt;&lt;input type=\&quot;text\&quot;&gt;",
         "<label for=\"sim\">Nome: </label><input type=\"text\">"
     ],
     [
         "&lt;legend&gt;&lt;/legend&gt;",
-        "Define uma legenda para o elemento &lt;fieldset&gt;",
+        "Define uma legenda para o elemento &lt;fieldset&gt;.",
         "&lt;fieldset&gt;&lt;legend&gt;Pessoa:&lt;/legend&gt;&lt;label for=\&quot;fname\&quot;"
         + "&gt;Nome:&lt;/label&gt;&lt;input type=\&quot;text\&quot; name=\&quot;"
         + "fname\&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;label for=\&quot;lname\&quot;&gt;"
@@ -458,7 +458,7 @@ var vetorTags = [
     ],
     [
         "&lt;main&gt;&lt;/main&gt;",
-        " especifica o conteúdo principal de um documento.",
+        "Especifica o conteúdo principal de um documento.",
         "Clique no link para ver o exemplo.",
         "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_main\"" 
         +"target=\"_blank\">Exemplo &lt;main&gt;<a>"
@@ -478,9 +478,9 @@ var vetorTags = [
     ],
     [
         "&lt;meta&gt;",
-        "Define metadados sobre um documento HTML. Metadados são dados (informações) sobre dados."
-        + "sempre vão dentro do elemento <head> e são normalmente usadas para especificar conjunto de"
-        + "caracteres, descrição de página, palavras-chave, autor do documento e configurações de"
+        "Define metadados sobre um documento HTML. Metadados são dados (informações) sobre dados. "
+        + "Sempre vão dentro do elemento <head> e são normalmente usadas para especificar conjunto de"
+        + "caracteres, descrição de página, palavras-chave, autor do documento e configurações de "
         + "janela de visualização.",
         "Não serão exibidos na página, mas podem ser analisados ​​pela máquina.",
         ""
@@ -509,14 +509,14 @@ var vetorTags = [
     ],
     [
         "&lt;noscript&gt;&lt;/noscript&gt;",
-        "Define um conteúdo alternativo para usuários que não oferecem suporte a scripts do lado do cliente",
+        "Define um conteúdo alternativo para usuários que não oferecem suporte a scripts do lado do cliente.",
         "Clique no link para ver o exemplo.",
         "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_noscript\"" 
         +"target=\"_blank\">Exemplo &lt;noscript&gt;<a>"
     ],
     [
         "&lt;object&gt;&lt;/object&gt;",
-        "Define um contêiner para um recurso externo.O recurso externo pode ser uma página da web,"
+        "Define um contêiner para um recurso externo. O recurso externo pode ser uma página da web, "
         + "uma imagem, um reprodutor de mídia ou um aplicativo de plug-in.",
         "Clique no link para ver o exemplo.",
         "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_object_video\"" 
@@ -567,7 +567,7 @@ var vetorTags = [
     ],
     [
         "&lt;param&gt;&lt;/param&gt;",
-        "Usada para definir parâmetros para um elemento &lt;object&gt;",
+        "Usada para definir parâmetros para um elemento &lt;object&gt;.",
         "Clique no link para ver o exemplo.",
         "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_param\"" 
         +"target=\"_blank\">Exemplo &lt;param&gt;<a>"
@@ -581,17 +581,13 @@ var vetorTags = [
     ],
     [
         "&lt;pre&gt;&lt;/pre&gt;",
-        "Define o texto pré-formatado, é exibido em uma fonte de largura fixa e preserva"
-        + "os espaços e as quebras de linha. O texto será exibido exatamente como escrito"
+        "Define o texto pré-formatado, é exibido em uma fonte de largura fixa e preserva "
+        + "os espaços e as quebras de linha. O texto será exibido exatamente como escrito "
         + "no código-fonte HTML.",
-        "&lt;pre&gt;Este elemento est&aacute; pr&eacute;-formatado, "
-        +"&Eacute; exibido desse modo.A fonde tem largura fixa e preserva os espa&ccedil;os"
-        +"e as quebras de linha.&lt;/pre&gt;",
+        "&lt;pre&gt;Este elemento est&aacute; pr&eacute;-formatado. "
+        +"&Eacute; exibido desse modo.&lt;/pre&gt;",
         "<pre>"
-        + "Este elemento está \npré-formatado, \nÉ exibido desse modo."
-        + "\nA fonte tem largura fixa\n e preserva os espaços"
-        + "\ne as quebras de linha."
-        +"</pre>"
+        + "Este elemento está \npré-formatado. \nÉ exibido desse modo.</pre>"
     ],
     [
         "&lt;progress&gt;&lt;/progress&gt;",
@@ -606,8 +602,8 @@ var vetorTags = [
         "&lt;q&gt;&lt;/q&gt;",
         "Define uma pequena citação.",
         "&lt;p&gt;HTML:&lt;q&gt; &eacute; uma linguagem de marca&ccedil;&atilde;o.&lt;/q&gt;"
-        + "Boa sorte no seu aprendizado.&lt;/p&gt;",
-        "<p>HTML:<q> é uma linguagem de marcação.</q>Boa sorte no seu aprendizado.</p>"
+        + " Boa sorte no seu aprendizado.&lt;/p&gt;",
+        "<p>HTML:<q> é uma linguagem de marcação.</q> Boa sorte no seu aprendizado.</p>"
     ],
     [
         "&lt;rp&gt;&lt;/rp&gt;",
@@ -620,19 +616,19 @@ var vetorTags = [
     ],
     [
         "&lt;rt&gt;&lt;/rt&gt;",
-        "Define uma explicação / pronúncia de caracteres (para tipografia do Leste Asiático)",
+        "Define uma explicação / pronúncia de caracteres (para tipografia do Leste Asiático).",
         "&lt;ruby&gt;漢 &lt;rt&gt; ㄏㄢˋ &lt;/rt&gt;&lt;/ruby&gt;",
         "<ruby>漢 <rt> ㄏㄢˋ </rt></ruby>"
     ],
     [
         "&lt;ruby&gt;&lt;/ruby&gt;",
-        "Define uma anotação em rubi (para tipografia do Leste Asiático)",
+        "Define uma anotação em rubi (para tipografia do Leste Asiático).",
         "&lt;ruby&gt;漢 &lt;rt&gt; ㄏㄢˋ &lt;/rt&gt;&lt;/ruby&gt;",
         "<ruby>漢 <rt> ㄏㄢˋ </rt></ruby>"
     ],
     [
         "&lt;s&gt;&lt;/s&gt;",
-        "especifica o texto que não é mais correto, preciso ou relevante."
+        "especifica o texto que não é mais correto, preciso ou relevante. "
         + "O texto será exibido com uma linha atravessada.",
         "&lt;p&gt;&lt;s&gt;Restam apenas 20 ingressos!&lt;/s&gt;&lt;/p&gt;&lt;p&gt;ESGOTADO!&lt;/p&gt;",
         "<p><s>Restam apenas 20 ingressos!</s></p><p>ESGOTADO!</p>"
@@ -670,7 +666,7 @@ var vetorTags = [
     ],
     [
         "&lt;small&gt;&lt;/small&gt;",
-        "Define um texto menor",
+        "Define um texto menor.",
         "&lt;p&gt;Texto normal.&lt;/p&gt;&lt;p&gt;&lt;small&gt;Texto com a tag &amp;"
         + "lt;small&amp;gt;&lt;/small&gt;&lt;/p&gt;",
         "<p>Texto normal.</p><p><small>Texto com a tag &lt;small&gt;</small></p>"
@@ -679,7 +675,7 @@ var vetorTags = [
         "&lt;source&gt;&lt;/source&gt;",
         "Usada para especificar vários recursos de mídia para elementos de mídia,  permite que"
         + "você especifique arquivos alternativos de vídeo / áudio / imagem que o navegador "
-        + "pode escolher, com base no suporte do navegador ou na largura da janela de visualização."
+        + "pode escolher, com base no suporte do navegador ou na largura da janela de visualização. "
         + "O navegador escolherá o primeiro <source> compatível.",
         "Clique no link para ver o exemplo.",
         "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_source_src\"" 
@@ -713,7 +709,7 @@ var vetorTags = [
     ],
     [
         "&lt;sub&gt;&lt;/sub&gt;",
-        "Define um texto com subscrito",
+        "Define um texto com subscrito.",
         "&lt;p&gt;Esse texto tem &lt;sub&gt;subscrito&lt;/sub&gt;.&lt;/p&gt;",
         "<p>Esse texto tem <sub>subscrito</sub>.</p>"
     ],
@@ -734,7 +730,7 @@ var vetorTags = [
     ],
     [
         "&lt;svg&gt;&lt;/svg&gt;",
-        "Define um contêiner para gráficos SVG.O SVG possui vários métodos para desenhar"
+        "Define um contêiner para gráficos SVG. O SVG possui vários métodos para desenhar"
         + "caminhos, caixas, círculos, texto e imagens gráficas.",
         "&lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;&lt;circle cx=&quot;20&quot;"
         + "cy=&quot;30&quot; r=&quot;10&quot; stroke=&quot;red&quot; stroke-width=&quot;1&quot;"
@@ -744,7 +740,7 @@ var vetorTags = [
     ],
     [
         "&lt;table&gt;&lt;/table&gt;",
-        "Define uma tabela, mas não mostra a tabela no navegador é necessario outros elementos"
+        "Define uma tabela, mas não mostra a tabela no navegador é necessario outros elementos "
         +"para formar a tabela.",
         "Clique no link para ver o exemplo.",
         "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_table_test\"" 
@@ -761,7 +757,7 @@ var vetorTags = [
     ],
     [
         "&lt;td&gt;&lt;/td&gt;",
-        "Usado para criar céculas no corpo da tabela",
+        "Usado para criar céculas no corpo da tabela.",
         "&lt;table&gt;&lt;tr&gt;&lt;td&gt;C&eacute;cula 1&lt;/td&gt;&lt;td&gt;C&eacute;cula 2&lt;"
         + "/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C&eacute;cula 3&lt;/td&gt;&lt;td&gt;C&eacute;cula 4"
         + "&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;",
@@ -800,7 +796,7 @@ var vetorTags = [
     ],
     [
         "&lt;thead&gt;&lt;/thead&gt;",
-        "Agrupa o conteúdo do cabeçalho da tabela",
+        "Agrupa o conteúdo do cabeçalho da tabela.",
         "Clique no link para ver o exemplo.",
         "<a href=\"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_tbody\"" 
         +"target=\"_blank\">Exemplo &lt;thead&gt;<a>"
@@ -815,11 +811,11 @@ var vetorTags = [
         "&lt;title&gt;&lt;/title&gt;",
         "Define o título do documento HTML, mostrado na aba/janela do navegador.",
         "A tag &lt;title&gt; fica dentro da tag &lt;head&gt;",
-        "Insepcione esse documento para encontrar a tag &lt;title&gt;"
+        "Inspencione esse documento para encontrar a tag &lt;title&gt;"
     ],
     [
         "&lt;tr&gt;&lt;/tr&gt;",
-        "Usado para criar céculas no corpo da tabela",
+        "Usado para criar céculas no corpo da tabela.",
         "&lt;table id=\&quot;exemplo-td\&quot;&gt;&lt;tr&gt;&lt;td&gt; Linha 1 Cel 1&lt;/td&gt;&lt;td&gt;"
         + "Linha 1 Cel.2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;",
         "<table id=\"exemplo-td\"><tr><td> Linha 1 Cel 1</td><td>Linha 1 Cel.2</td></tr></table>"
@@ -854,7 +850,7 @@ var vetorTags = [
     [
         "&lt;var&gt;&lt;/var&gt;",
         "Usada para definir uma variável na programação ou em uma expressão matemática."
-        + "O conteúdo interno é normalmente exibido em itálico ",
+        + "O conteúdo interno é normalmente exibido em itálico.",
         "&lt;p&gt;Sou a vari&aacute;vel  &lt;var&gt;x&lt;/var&gt; e eu a vari&aacute;vel"
         + "&lt;var&gt;y&lt;/var&gt;.&lt;/p&gt;",
         "<p>Sou a variável  <var>x</var> e eu a variável <var>y</var>.</p>"

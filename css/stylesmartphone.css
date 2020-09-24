@@ -16,6 +16,11 @@ header{
     width: 95%;
 }
 
+.nav-abas {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vw;
+    width: 95%;
+}
 .search {
     background-position: right 4% bottom 50%;
     padding: 10px 0px 10px 15px;
@@ -42,6 +47,10 @@ header{
     display: inline-block;
     text-align: center;
     padding: 45px 10px 25px 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+    line-height: 3vh;
+    font-weight: lighter;
 }
 
 /* Mostrando os span's, definindo a posição e colocando uma borda embaixo*/
@@ -54,6 +63,9 @@ header{
     background-color: #bfbfbf;
     padding: 4px 0 4px 0;
     border-bottom: 1px solid #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
 }
 
 

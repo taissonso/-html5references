@@ -74,7 +74,7 @@ body {
     left: 0;
     width: 100%; /*Para ir até o final do elemento*/
     height: 7px;
-    transform: scaleX(0); /*Aqui o pulo do gato, não faço o aumento da */
+    transform: scaleX(0); 
     transition: transform 1s ease;
     transform-origin: bottom right;
     background: #339933;

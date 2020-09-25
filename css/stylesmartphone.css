@@ -49,8 +49,9 @@ header{
     padding: 45px 10px 25px 10px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1em;
+    font-weight: 500;
     line-height: 3vh;
-    font-weight: lighter;
+    
 }
 
 /* Mostrando os span's, definindo a posição e colocando uma borda embaixo*/

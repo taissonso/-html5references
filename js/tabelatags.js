@@ -206,7 +206,7 @@ var vetorTags = [
         + "&lt;datalist id=&quot;browsers&quot;&gt;&lt;option value=&quot;Edge&quot;&gt;"
         + "&lt;option value=&quot;Firefox&quot;&gt;&lt;option value=&quot;Chrome&quot;&gt;"
         +  "&lt;option value=&quot;Opera&quot;&gt;&lt;option value=&quot;Safari&quot;&gt;&lt;/datalist&gt;",
-        "<label for=\"browser\">Escolha seu navegador na lista:</label><input list=\"browsers\""
+        "<label for=\"browser\">Escolha seu navegador na lista:</label><input width=\"40px\" list=\"browsers\""
         + "name=\"browser\" id=\"browser\"><datalist id=\"browsers\"><option value=\"Edge\">"
         + "<option value=\"Firefox\"><option value=\"Chrome\"><option value=\"\Opera\">"
         + "<option value=\"Safari\"></datalist>"

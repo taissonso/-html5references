@@ -154,7 +154,7 @@ body {
 }
 
 /* --- Rodapé --- */
-.rodape {
+footer {
     clear: both;
     color: #ffffff;
     background-color: #333333;
@@ -168,7 +168,7 @@ body {
 
 
  /*Configuração do ul e li do Rodape*/
-.rodape ul, li{
+.footer ul, li{
     box-sizing: border-box;
     display: inline-block;
     margin-top: 7px;

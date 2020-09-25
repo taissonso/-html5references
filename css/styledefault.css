@@ -42,7 +42,7 @@ body {
     padding: 0;
     margin: 25px 0 0 0;
     background-color: #ffffff;
-    width: 80%;
+    width: 85%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3vw;
     color: #1a1a1a;
@@ -86,7 +86,7 @@ body {
 }
 /* --- CONTEÚDO --- */
 .container-conteudo {
-    width: 80%;
+    width: 85%;
 }
 
 .conteudo {
@@ -104,7 +104,7 @@ body {
     background-image: url('../image/search.png');
     background-repeat: no-repeat;
     background-position: right 2% bottom 50%;
-    width: 80%;
+    width: 85%;
     margin: 20px 0 0 0;
     padding: 10px 0px 10px 25px;
     border-radius: 8px;
@@ -198,11 +198,6 @@ footer {
     color: #ffffff;
 }
 
-#exemplo-span {
-    display: block;
-    color: #009e00;    
-}
-
 #exemplo-td {
     margin: auto;
 }
@@ -217,6 +212,14 @@ footer {
     width: 80%;
 }
 
+.exemplo-span {
+ 
+    color: green;
+}
+
+.exemplo-datalist input{
+    width: 70%
+}
 
 .obsoleto {
     color:#ff0000;

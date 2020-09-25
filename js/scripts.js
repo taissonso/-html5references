@@ -61,7 +61,7 @@ window.addEventListener('load', () => {
                 entrada = entrada.replace('Tags','');
                 entrada = entrada.replace(/[<>]/g,'');
                 if (entrada.toLowerCase().indexOf(filtraEntrada) > -1) {
-                    tr[i].style.display = "relative";
+                    tr[i].style.display = "";
                 } else {
                     tr[i].style.display = "none";
                 }

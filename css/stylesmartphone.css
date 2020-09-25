@@ -13,18 +13,18 @@ header{
 }
 
 .nav-abas, .container-conteudo {
-    width: 95%;
+    width: 90%;
 }
 
 .nav-abas {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 4vw;
-    width: 95%;
+    width: 90%;
 }
 .search {
     background-position: right 4% bottom 50%;
     padding: 10px 0px 10px 15px;
-    width: 95%;
+    width: 90%;
 }
 
 /* --- Tabela --- */

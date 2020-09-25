@@ -206,10 +206,10 @@ var vetorTags = [
         + "&lt;datalist id=&quot;browsers&quot;&gt;&lt;option value=&quot;Edge&quot;&gt;"
         + "&lt;option value=&quot;Firefox&quot;&gt;&lt;option value=&quot;Chrome&quot;&gt;"
         +  "&lt;option value=&quot;Opera&quot;&gt;&lt;option value=&quot;Safari&quot;&gt;&lt;/datalist&gt;",
-        "<label for=\"browser\">Escolha seu navegador na lista:</label><input width=\"40px\" list=\"browsers\""
+        "<div class=\"exemplo-datalist\"><label for=\"browser\">Escolha seu navegador na lista:</label><input  list=\"browsers\""
         + "name=\"browser\" id=\"browser\"><datalist id=\"browsers\"><option value=\"Edge\">"
         + "<option value=\"Firefox\"><option value=\"Chrome\"><option value=\"\Opera\">"
-        + "<option value=\"Safari\"></datalist>"
+        + "<option value=\"Safari\"></datalist></div>"
     ],
     [
         "&lt;dd&gt;&lt;/dd&gt;",
@@ -682,11 +682,11 @@ var vetorTags = [
         +"target=\"_blank\">Exemplo &lt;source&gt;<a>"
     ],
     [
-        "&lt;span&gt;&lt;/span&gt;",
+        "&lt;span &gt;&lt;/span&gt;",
         "É um contêiner embutido usado para marcar uma parte de um texto ou uma parte de um documento.",
         "&lt;p&gt;Eu sou um par&aacute;grafo. &lt;span id=&quot;exemplo-span&quot;&gt;"
         + "Eu sou um &lt;span&gt; estilizado.&lt;/span&gt;&lt;/p&gt;",
-        "<p>Eu sou um parágrafo. <span id=\"exemplo-span\">Eu sou um &lt;span&gt; estilizado.</span></p>"
+        "<p>Eu sou um parágrafo.<span class=\"exemplo-span\">Eu sou um &lt;span&gt; estilizado.</span></p> "
     ],
     [
         "<p class=\"obsoleto\">&lt;strike&gt;&lt;/strike&gt;</p>",
